@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hubble | HUB Empresa | Dados</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+		<!--ESTILO-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="estilo_hub_empresa_dados.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+  	<body style="background-color: #ffffff;">
+		<main>
+			<!-- SIDEBAR -->
+			<div class="layout">
+				<div class="fundo-sidebar">
+					<nav class="sidebar">
+						<div class="sidebar-content">
+							<div class="profile-section">
+								<div class="profile-pic"></div>
+							</div>
+							<ul class="menu">
+								<li class="li-menu">
+								<a href="#">
+									<div class="icon perfil-icon"></div>
+									<span class="popp-font-2">Perfil da empresa</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Hub_empresa.html">
+									<div class="icon criar-icon"></div>
+									<span class="popp-font-2">Criar e gerenciar</span>
+								</a>
+								</li>
+							
+								<li class="li-menu selecionado">
+								<a href="Hub_empresa_dados.html">
+									<div class="icon dados-icon"></div>
+									<span class="popp-font-2">Dados</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Login.html">
+									<div class="icon sair-icon"></div>
+									<span class="popp-font-2">Sair</span>
+								</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- CONTEÚDO PRINCIPAL -->
+				<div class="conteudo">
+					<br>
+					<div style="margin-left: 20px;">
+						<br>
+						<div class="d-flex justify-content justify-content-start" style="padding-left: 100px;">
+							<a href="#" class="nav-link3 a-13 me-4 popp-font-2 ativo3">Eventos</a>
+							<div class="ps-4"></div>
+							<a href="#" class="nav-link3 a-13 me-4 popp-font-2">Vagas</a>
+						</div>
+					</div>
+					<hr>
+
+					<!-- Conteúdo -->
+					<div style="margin-left: 100px;">
+						<div class="row">
+							<div class="col" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);">
+								<canvas id="myChart" style="width: 750px; height: 450px;"></canvas>
+							</div>
+							<div class="col"></div>
+							<div class="col" style="margin-right: 100px;">
+								<div class="card-info-fundo">
+									<h2 class="popp-font" style="color: #1a1a1a;">Informações</h2>
+									<div class="card-info">
+										<div class="info-label popp-font-2">Eventos criados</div>
+										<div class="info-value popp-font">4</div>
+									</div>
+
+									<div class="card-info">
+										<div class="info-label popp-font-2">Avaliações positivas</div>
+										<div class="info-value popp-font">10K</div>
+									</div>
+
+									<div class="card-info">
+										<div class="info-label popp-font-2">Maior número de participantes</div>
+										<div class="info-value popp-font">12K</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="margin-bottom: 100px;"></div>
+						<div class="row">
+							<div class="col" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);">
+								<canvas id="myChart2" style="width: 750px; height: 450px;"></canvas>
+							</div>
+							<div class="col"></div>
+							<div class="col" style="margin-right: 100px;">
+							<div class="card-info-fundo">
+								<h2 class="popp-font">Filtros</h2>
+
+								<div class="select-wrapper">
+									<select class="form-select popp-font-2">
+									<option selected>filtrar por:</option>
+									<option value="1">Tecnologia</option>
+									<option value="2">Educação</option>
+									<option value="3">Social</option>
+									<option value="4">Outros</option>
+									</select>
+								</div>
+								<div class="periodo-section my-3">
+									<span class="periodo-label popp-font-2">Ver por período:</span>
+								</div>
+								<div class="botoes-periodo">
+									<button class="btn periodo ativo popp-font-2">ultimos 30 dias</button>
+									<button class="btn periodo popp-font-2">ultimos 6 meses</button>
+									<button class="btn periodo popp-font-2">ultimos 12 meses</button>
+								</div>
+							</div>
+							</div>
+						</div>
+						<br>
+					</div>
+
+				</div>
+			</div> <!-- LAYOUT-->
+		</main>
+		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+		<!-- JS -->
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  	</body>
+</html>
+
+<script>
+	const ctx = document.getElementById('myChart').getContext('2d');
+
+	new Chart(ctx, {
+	  type: 'bar',
+	  data: {
+		labels: ['Expo Criativa Uberlândia', 'Mostra de Cinema', 'Festival Hyperion', 'Show da Angra Maria'],
+		datasets: [
+			{
+				label: 'Inscritos',
+				data: [500, 500, 500, 500],
+				backgroundColor: '#6c4abc', // Roxo
+				borderRadius: 6,
+				barThickness: 40
+			},
+			{
+				label: 'Participantes',
+				data: [1, 400, 1, 250],
+				backgroundColor: '#3b1a7d', // roxo escuro
+				borderRadius: 6,
+				barThickness: 40
+			},
+			{
+				label: 'Outros',
+				data: [1, 1, 500, 250],
+				backgroundColor: '#f0c541', // roxo escuro
+				borderRadius: 6,
+				barThickness: 40
+			},
+		]
+	  },
+	  options: {
+		maintainAspectRatio: false,
+		responsive: false,
+		plugins: {
+		  legend: {
+			position: 'top',
+			labels: {
+			  color: '#444',
+			  font: {
+				family: 'Arial',
+				size: 14,
+				weight: 'bold'
+			  }
+			}
+		  },
+		  tooltip: {
+			backgroundColor: '#000',
+			titleFont: {
+			  family: 'Arial',
+			  weight: 'bold'
+			},
+			bodyFont: {
+			  family: 'Arial'
+			}
+		  }
+		},
+		scales: {
+		  x: {
+			grid: {
+			  display: false
+			},
+			ticks: {
+			  color: '#333',
+			  font: {
+				family: 'Arial',
+				size: 13
+			  }
+			}
+		  },
+		  y: {
+			beginAtZero: true,
+			max: 500, // define o valor máximo (topo do eixo Y)
+			grid: {
+			  color: '#1a1a1a'
+			},
+			ticks: {
+				color: '#333',
+				font: {
+				family: 'Arial',
+				size: 12
+			  }
+			}
+		  }
+		}
+	  }
+	});
+
+	const data = {
+	labels: ['Inscritos', 'Participantes', 'Outros'],
+	datasets: [{
+		data: [2000, 1151, 253],
+		backgroundColor: ['#6c4abc', '#3b1a7d', '#f0c541'],
+		hoverOffset: 10
+	}]
+	};
+
+	const config = {
+	type: 'pie',
+	data: data,
+	options: {
+		responsive: false,
+		plugins: {
+		legend: {
+			position: 'top',
+		},
+		title: {
+			display: true,
+			text: 'Distribuição Geral por Categoria'
+		}
+		}
+	},
+	};
+
+	// Criação do gráfico
+	const ctx2 = document.getElementById('myChart2').getContext('2d');
+	new Chart(ctx2, config);
+
+
+</script>

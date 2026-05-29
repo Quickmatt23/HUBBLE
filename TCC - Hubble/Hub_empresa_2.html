@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hubble | HUB Empresa | Criar e Gerenciar</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+	<!--ESTILO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="estilo_hub_empresa.css">
+	</head>
+  	<body style="background-color: #ffffff;">
+		<main>
+			<!-- SIDEBAR -->
+			<div class="layout">
+
+			<div class="fundo-sidebar">
+				<nav class="sidebar">
+					<div class="sidebar-content">
+						<div class="profile-section">
+							<div class="profile-pic"></div>
+						</div>
+						<ul class="menu">
+							<li class="li-menu">
+							  <a href="#">
+								<div class="icon perfil-icon"></div>
+								<span class="popp-font-2">Perfil da empresa</span>
+							  </a>
+							</li>
+						  
+							<li class="li-menu selecionado">
+							  <a href="Hub_empresa.html">
+								<div class="icon criar-icon"></div>
+								<span class="popp-font-2">Criar e gerenciar</span>
+							  </a>
+							</li>
+						  
+							<li class="li-menu">
+							  <a href="Hub_empresa_dados.html">
+								<div class="icon dados-icon"></div>
+								<span class="popp-font-2">Dados</span>
+							  </a>
+							</li>
+						  
+							<li class="li-menu">
+							  <a href="Login.html">
+								<div class="icon sair-icon"></div>
+								<span class="popp-font-2">Sair</span>
+							  </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+				<!-- CONTEÚDO PRINCIPAL -->
+				<div class="conteudo">
+					<br>
+						<div class="imagem d-flex justify-content-around" style="margin-left: 18px;">
+							<a class="btn btn-lg button-imagem d-flex align-items-center popp-font-2" href="Hub_empresa_criar.html">
+								<div class="imagem-botao"></div>
+								Publicar novo evento
+							</a>
+							
+							<a class="btn btn-lg button-imagem d-flex align-items-center popp-font-2" href="#">
+								<div class="imagem-botao"></div>
+								Publicar Vaga
+							</a>
+						</div>
+					<div style="margin-left: 20px;">
+						<br>
+						<div class="d-flex justify-content justify-content-start" style="padding-left: 100px;">
+							<a href="#" class="nav-link2 a-13 me-4 popp-font ativo3">Eventos</a>
+							<div class="ps-4"></div>
+							<a href="#" class="nav-link2 a-13 me-4 popp-font desativado2">Vagas</a>
+						</div>
+					</div>
+					<br>
+
+					<div style="margin-left: 9px;">
+
+						<!-- CONTENT -->
+						<div style="margin-left: 9px; background-color: #f4f4f6;   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); height: fit-content;">
+
+							<div class="row align-items-center mb-2 text-center" style="color: #1a1a1a;">
+								<div class="col" style="background-color: #1a1a1a; margin-left: 12px">
+									<div class="d-flex justify-content-start align-items-center" style="height: 50px;">
+										<img src="imagens/filtro-icon.png" height="20px" class="px-4">
+										<p class="popp-font m-0" style="font-size: 20px; color: white;">FILTRAR</p>
+									</div>
+								</div>
+							</div>
+							<br>
+							<hr style="border: none; height: 5px; background-color: #1a1a1a;">
+							<!-- HEADER -->
+							<div class="row align-items-center mb-2 text-center" style="color: #1a1a1a; font-weight: 700; text-transform: uppercase;">
+								<div class="col-lg-3">
+									<h3 class="popp-font-2">Eventos</h3>
+								</div>
+								<div class="col-lg-2">
+									<h3 class="popp-font-2">Data</h3>
+								</div>
+								<div class="col-lg-2">
+									<h3 class="popp-font-2">Status</h3>
+								</div>
+								<div class="col-lg-3">
+									<h3 class="popp-font-2">Aprovação</h3>
+								</div>
+								<div class="col-lg-2">
+									<h3 class="popp-font-2">Ações</h3>
+								</div>
+							</div>
+							<hr style="border: none; height: 5px; background-color: #202020;;">
+
+							<!-- CONTENT -->
+							<div class="row align-items-center text-center" style="margin-bottom:-20px;">
+								<!-- EVENTO -->
+								<div class="col-lg-3 d-flex align-items-center gap-3 text-start">
+									<img class="mx-2" src="imagens/evento_dest_1.webp" alt="Imagem do evento" style="height: 120px; width: 120px; border-radius: 8px; object-fit: cover;">
+									<div>
+										<a href="#" class="popp-font a-12" style="font-size: 20px; font-weight: 700; text-decoration: none;">Show da Angra Maria</a>
+										<p class="pt-3 popp-font-2" style="font-size: 15px; color: #242424;">
+											Prepare-se para uma noite inesquecível com Angra Maria, uma das vozes mais marcantes da nova cena pop brasileira...
+										</p>
+									</div>
+								</div>
+
+								<!-- DATA -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a;">09/05/2025</h4>
+									<p  class="popp-font-2" style="font-size: 15px; color: #242424;">ENVIADO</p>
+								</div>
+
+								<!-- STATUS -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a">POSTADO</h4>
+								</div>
+
+								<!-- APROVAÇÃO -->
+								<div class="col-lg-3">
+									<div>
+										<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #1a1a1a">89,0%</h4>
+										<p class="popp-font-2" style="font-size: 15px; font-weight: 600; color: #1a1a1a">3.4K</p>
+									</div>
+								</div>
+
+								<!-- BOTÃO -->
+								<div class="col-lg-2">
+									<a href="#" class="btn popp-font button">EXPANDIR</a>
+								</div>
+							</div>
+							<hr style="border: none; height: 5px; background-color: #1a1a1a;">
+
+							<!-- CONTENT -->
+							<div class="row align-items-center text-center" style="margin-bottom: -5px;">
+								<!-- EVENTO -->
+								<div class="col-lg-3 d-flex align-items-center gap-3 text-start">
+									<img class="mx-2" src="imagens/evento2.png" alt="Imagem do evento" 
+											style="height: 120px; width: 120px; border-radius: 8px; object-fit: cover;">
+									<div>
+										<a href="#" class="a-12 popp-font" style="font-size: 20px; font-weight: 700; text-decoration: none; color: #1a1a1a;">Festival Hyperion</a>
+										<p class="pt-3 popp-font-2" style="font-size: 15px; color: #242424; margin: 0;">
+										Festival de inovação com startups, palestras, networking e oportunidades de estágio e emprego em tecnologia...</p>
+									</div>
+								</div>
+
+								<!-- DATA -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700;">30/09/2025</h4>
+									<p class="popp-font-2" style="font-size: 15px; color: #242424;">PROCESSANDO</p>
+								</div>
+
+								<!-- STATUS -->
+								<div class="col-lg-2">
+									<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #4b4b4b">EM REVISÃO</h4>
+								</div>
+
+								<!-- APROVAÇÃO -->
+								<div class="col-lg-3">
+									<div>
+										<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #1a1a1a;">--</h4>
+										<p class="popp-font-2" style="font-size: 15px; font-weight: 600; color: #1a1a1a;">--</p>
+									</div>
+								</div>
+
+								<!-- BOTÃO -->
+								<div class="col-lg-2">
+									<a href="#" class="btn popp-font button">
+										EXPANDIR
+									</a>
+								</div>
+							</div>
+							<hr style="border: none; height: 5px; background-color: #1a1a1a;">
+
+							<!-- CONTENT -->
+							<div class="row align-items-center text-center" style="color: white; margin-bottom: -5px;">
+								<!-- EVENTO -->
+								<div class="col-lg-3 d-flex align-items-center gap-3 text-start">
+									<img class="mx-2" src="imagens/evento6.png" alt="Imagem do evento" 
+											style="height: 120px; width: 120px; border-radius: 8px; object-fit: cover;">
+									<div>
+										<a href="#" class="a-12 popp-font" style="font-size: 20px; font-weight: 700; text-decoration: none; color: white; color: #1a1a1a;">Mostra de Cinema </a>
+										<p class="pt-3 popp-font-2" style="font-size: 15px; color: #ccc; margin: 0; color: #242424;">
+											Feira de artes visuais, design e ilustração com expositores locais, oficinas e bate-papos com artistas...
+										</p>
+									</div>
+								</div>
+
+								<!-- DATA -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a">19/10/2025</h4>
+									<p class="popp-font-2" style="font-size: 15px; color: #242424;">ENVIADO</p>
+								</div>
+
+								<!-- STATUS -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a">POSTADO</h4>
+								</div>
+
+								<!-- APROVAÇÃO -->
+								<div class="col-lg-3">
+									<div>
+										<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #1a1a1a">69,0%</h4>
+										<p class="popp-font-2" style="font-size: 15px; font-weight: 600; color: #1a1a1a">8.4K</p>
+									</div>
+								</div>
+
+								<!-- BOTÃO -->
+								<div class="col-lg-2">
+									<a href="#" class="btn popp-font button">
+										EXPANDIR
+									</a>
+								</div>
+							</div>
+							<hr style="border: none; height: 5px; background-color: #1a1a1a;">
+
+							<!-- CONTENT -->
+							<div class="row align-items-center text-center" style="color: white; margin-bottom: -5px;">
+								<!-- EVENTO -->
+								<div class="col-lg-3 d-flex align-items-center gap-3 text-start">
+									<img class="mx-2" src="imagens/evento5.png" alt="Imagem do evento" 
+											style="height: 120px; width: 120px; border-radius: 8px; object-fit: cover;">
+									<div>
+										<a href="#" class="a-12 popp-font" style="font-size: 20px; font-weight: 700; text-decoration: none; color: #1a1a1a">Expo Criativa Uberlândia</a>
+										<p class="pt-3 popp-font-2" style="font-size: 15px; color: #242424; margin: 0;">
+											Feira de artes visuais, design e ilustração com expositores locais, oficinas e bate-papos com artistas...
+										</p>
+									</div>
+								</div>
+
+								<!-- DATA -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a">01/12/2025</h4>
+									<p class="popp-font-2" style="font-size: 15px; color: #242424;">PROCESSANDO</p>
+								</div>
+
+								<!-- STATUS -->
+								<div class="col-lg-2">
+									<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #4b4b4b">EM REVISÃO</h4>
+								</div>
+
+								<!-- APROVAÇÃO -->
+								<div class="col-lg-3">
+									<div>
+										<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #1a1a1a">--</h4>
+										<p class="popp-font-2" style="font-size: 15px; font-weight: 600;color: #1a1a1a">--</p>
+									</div>
+								</div>
+
+								<!-- BOTÃO -->
+								<div class="col-lg-2">
+									<a href="#" class="btn popp-font button">
+										EXPANDIR
+									</a>
+								</div>
+							</div>
+							<hr style="border: none; height: 5px; background-color: #1a1a1a; ">
+
+							<!-- CONTENT -->
+							<div class="row align-items-center text-center" style="color: white; margin-bottom: 20px; padding-bottom: 20px;">
+								<!-- EVENTO -->
+								<div class="col-lg-3 d-flex align-items-center gap-3 text-start">
+									<img class="mx-2" src="exemplo/evento.jfif" alt="Imagem do evento" 
+											style="height: 120px; width: 120px; border-radius: 8px; object-fit: cover;">
+									<div>
+										<a href="#" class="a-12 popp-font" style="font-size: 20px; font-weight: 700; text-decoration: none; color: white; color: #1a1a1a;">Festival de Inovação 2025</a>
+										<p class="pt-3 popp-font-2" style="font-size: 15px; color: #ccc; margin: 0; color: #242424;">
+											Um encontro que reúne startups, investidores, estudantes e empresas para compartilhar conhecimento e lançar ideias inovadoras...
+										</p>
+									</div>
+								</div>
+
+								<!-- DATA -->
+								<div class="col-lg-2">
+									<h4 class="popp-font" style="font-size: 20px; font-weight: 700; color: #1a1a1a">19/10/2025</h4>
+									<p class="popp-font-2" style="font-size: 15px; color: #242424;">PROCESSANDO</p>
+								</div>
+
+								<!-- STATUS -->
+								<div class="col-lg-2">
+									<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #4b4b4b">EM REVISÃO</h4>
+								</div>
+
+								<!-- APROVAÇÃO -->
+								<div class="col-lg-3">
+									<div>
+										<h4 class="popp-font-2" style="font-size: 20px; font-weight: 700; color: #1a1a1a">--</h4>
+										<p class="popp-font-2" style="font-size: 15px; font-weight: 600; color: #1a1a1a">--</p>
+									</div>
+								</div>
+
+								<!-- BOTÃO -->
+								<div class="col-lg-2">
+									<a href="#" class="btn popp-font button">
+										EXPANDIR
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- LAYOUT-->
+		</main>
+		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+		<!-- JS -->
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  	</body>
+</html>

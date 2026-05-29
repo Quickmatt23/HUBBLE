@@ -1,0 +1,584 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+/* Fonte 3: Intro-Rust */
+@font-face {
+  font-family: font3;
+  src: url('fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Mantenha aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+.a-12 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 10px;
+  color: #1a1a1a;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-12::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 3px;
+  background: #1a1a1a;;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-12:hover {
+  color: #1a1a1a;                   /* Altera cor para roxo */
+  text-shadow: 2px 2px 4px #ffffff;    /* Sombra de texto ao passar o mouse */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-12:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo2 {
+  color: #6a00d9;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo2::after {
+  width: 100%;
+}
+
+.nav-link2{
+  font-size: 30px;
+  text-decoration: none;
+}
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+.a-13 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 25px;
+  color: #221f1f;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-13::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 3px;
+  background: #6a00d9;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-13:hover {
+  color: #6a00d9;                   /* Altera cor para roxo */
+  text-shadow: 2px 2px 4px #ffffff;    /* Sombra de texto ao passar o mouse */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-13:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo3 {
+  color: #6a00d9;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo3::after {
+  width: 100%;
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+/* Animação suave ao passar o mouse no ícone */
+.zoom{
+  transition: transform 0.3s;
+}
+
+/* Aplica efeito de zoom (escala 150%) no hover */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* ======================== BARRA LATERAL ======================== */
+
+.fundo-sidebar{
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg,rgb(41, 33, 51) 0%, rgba(75, 30, 82, 1) 100%);
+}
+
+.sidebar {
+  position: sticky;        /* fixa a barra no lado esquerdo */
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 60vh;          /* ocupa a altura da viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: white;
+  z-index: 1000;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('imagens/Logo 4.png');
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+/*=================== ATIVAÇÃO ============================*/
+
+/* Estilo base da lista */
+.menu {
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+}
+
+/* Itens do menu */
+.li-menu {
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Links */
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover: fundo roxo escuro e texto branco */
+.li-menu:hover a {
+  background-color: #5e3a9e;
+  color: white;
+}
+
+/* Item selecionado/ativo */
+.selecionado a {
+  background-color: #5e3a9e;
+  color: white;
+  padding-left: 16px;
+  border-left: 10px solid #2d0c6e;
+}
+
+/* Ícones */
+.icon {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.25s ease-out;
+}
+
+.menu a:hover .icon {
+  transform: scale(1.05);
+}
+
+/* Ícones específicos */
+.perfil-icon {
+  background-image: url('imagens/conta-icon-claro.png');
+  height: 40px;
+}
+
+.criar-icon {
+  background-image: url('imagens/criar-icon-claros.png');
+}
+
+.dados-icon {
+  background-image: url('imagens/dados-icon-claro.png');
+  height: 30px;
+  width: 42px;
+  background-position: center;
+  background-size: cover;
+}
+
+.sair-icon {
+  background-image: url('imagens/sair-icon-claro.png');
+  height: 30px;
+}
+
+/*===============================================*/
+
+
+.sidebar-container {
+  height: 110vh; /* Garante altura total da tela */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  flex-grow: 1;       /* Ocupa o espaço restante */
+  overflow-y: hidden;   /* Scroll se necessário */
+}
+
+.sidebar {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 72vh; /* ou 100% se o pai tiver altura definida */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================== BARRA LATERAL ======================== */
+
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+.conteudo {
+	flex: 1;
+}
+
+.button {
+  margin-left: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border: none;
+  width: 150px;
+  height: 55px;
+  border-radius: 7px;
+  color: white;
+  background-color: #6a2fdf;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background-color: #7c43f0;
+  transform: scale(1.2);
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.link{
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+/*================== Banner ======================*/
+
+.button-imagem {
+  display: flex; /* Para centralizar com Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 20px;
+  border: none;
+  width: 200px;
+  height: 45px;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background-size: 200% 200%; /* Para animar o gradiente */
+  background-position: left;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+
+.button-imagem:hover {
+  color: white;
+  background: #7b3fe4;
+  background-size: 200% 200%;
+  background-position: right;
+  transition: background-position 0.3s ease, transform 0.3s ease;
+  transform: scale(1.01);
+  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.button-imagem:active {
+  transform: scale(1);
+  color: white;
+}
+
+.imagem-botao-ir {
+  margin-left: 20px;
+  width: 20px;
+  height: 27px;
+  background-image: url('imagens/voltar-icon-dark.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-ir {
+  background-image: url('imagens/voltar-icon-claro.png');
+}
+
+.imagem-botao-voltar {
+  margin-left: 20px;
+  width: 20px;
+  height: 27px;
+  background-image: url('imagens/voltar-icon-dark2.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-voltar {
+  background-image: url('imagens/voltar-icon-claro2.png');
+}
+
+.imagem-botao-fim {
+  margin-left: 20px;
+  width: 25px;
+  height: 20px;
+  background-image: url('imagens/icon-proximo-escuro.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-fim {
+  background-image: url('imagens/icon-proximo-claro.png');
+}
+
+/*============================ PASSOS ==================*/
+
+.timeline {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: font4;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.number {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #331b3b;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.247);
+}
+
+.step.active .number{
+  background-color: #7b3fe4;
+  color: white;
+  width: 43px;
+  height: 43px;
+}
+
+.label {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #331b3b;
+  font-weight: 600;
+}
+
+.label.active {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #7b3fe4;
+  font-weight: 350;
+}
+
+
+/* ========================= */
+.voltar {
+  font-size: 20px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: #1a1a1a;
+  display: flex; /* alinha imagem e texto */
+  align-items: center;
+  gap: 8px;
+  transition: 0.4s; /* transição no texto */
+}
+
+.voltar-imagem {
+  width: 20px;
+  height: 20px;
+  background-image: url('imagens/voltar-icon-dark2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.4s; /* transição na imagem */
+}
+
+/* Quando hover no link, aumenta texto e imagem */
+.voltar:hover {
+  font-size: 25px;
+}
+
+.voltar:hover .voltar-imagem {
+  width: 30px;
+  height: 30px;
+}
+
+.formulario{
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.781); 
+  padding: 21px;
+}
+
+textarea{
+  height: 200px;
+  max-height: 200px;
+}
+
+textarea.textarea2{
+  height: 100px;
+  max-height: 100px;
+}
+
+.banner {
+  background-image: url('imagens/fundo-4.webp'); /* coloque sua imagem aqui */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-control{
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="estilo_perfil.css">
+  
+</head>
+  <body>
+
+  <header>
+    <div class="d-flex align-items-center">
+    <div class="foto-container" onclick="abrirSelecaoImagem()">
+      <div class="foto"></div>
+      <div class="foto-icon">
+        <i class="bi bi-camera-fill"></i>
+      </div>
+    </div>
+      <h1 class="ms-3">Perfil do Usuário</h1>
+    </div>
+    <a href="Hub.html" class="back-btn">&#8592; Voltar</a>
+    <div class="tabs">
+      <div class="tab active">Minha Conta</div>
+      <div class="tab">Preferências</div>
+    </div>
+  </header>
+
+  <main class="container-section">
+    <section class="panel">
+      <h2>Informações Pessoais</h2>
+      <div class="row">
+        <div class="col-md-6 field">
+          <label>Nome</label>
+          <input type="text" value="Matheus Lemos" readonly>
+        </div>
+        <div class="col-md-6 field">
+          <label>E-mail</label>
+          <input type="email" value="matheuslemoscout@gmail.com" readonly>
+        </div>
+        <div class="col-md-6 pt-3 field">
+          <label>Data de Nascimento</label>
+          <input type="text" value="01/01/2000" readonly>
+        </div>
+        <div class="col-md-6 pt-3 field">
+          <label>Cidade</label>
+          <input type="text" value="Uberlândia - MG" readonly>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Interesses</h2>
+      <p>Startups, Tecnologia, Inovação, Networking</p>
+    </section>
+
+    <section class="panel">
+      <h2>Histórico de Atividades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Evento</th>
+            <th>Status</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hackathon UberHub</td>
+            <td>Participado</td>
+            <td>15/06/2025</td>
+          </tr>
+          <tr>
+            <td>Feira de Startups</td>
+            <td>Inscrito</td>
+            <td>28/07/2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Eventos Curtidos</h2>
+      <ul>
+        <li>Pitch Day Uberlândia</li>
+        <li>Semana da Inovação</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Configurações de Conta</h2>
+      <button class="btn btn-custom me-2 mb-2" style="color: white;">Alterar E-mail</button>
+      <button class="btn btn-custom me-2 mb-2"  style="color: white;">Alterar Senha</button>
+      <button class="btn btn-danger-custom mb-2"  style="color: white;">Excluir Conta</button>
+    </section>
+
+    <section class="panel">
+      <h2>Notificações</h2>
+      <p class="note">Você está recebendo notificações sobre novos eventos por e-mail.</p>
+      <button class="btn btn-outline-primary">Gerenciar Preferências</button>
+    </section>
+  </main>
+    <input type="file" id="inputImagemFake" style="display:none;">
+    <script>
+      function abrirSelecaoImagem() {
+        document.getElementById('inputImagemFake').click();
+      }
+    </script>
+  </body>
+</html>

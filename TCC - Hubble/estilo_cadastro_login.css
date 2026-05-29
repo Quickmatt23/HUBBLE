@@ -1,0 +1,401 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+/* Fonte 3: Intro-Rust */
+@font-face {
+  font-family: font3;
+  src: url('fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("imagens/fundo-3_1.webp"); /* Mantenha aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* ======================== HEADER ======================== */
+/* Define a altura da barra de navegação */
+.e-header {
+  height: 65px;
+
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 24, 36 , 0.8),
+    rgba(34, 20, 39 , 0.8)
+  ); /* Gradiente escuro com transparência */
+
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+}
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+/* Estilo base para os links (posição relativa para o pseudo-elemento ::after funcionar) */
+.a-1 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 10px;
+  color: #F4F4F4;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-1::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 2px;
+  background: #ec5e5e;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-1:hover {
+  color: #ec5e5e;                   /* Altera cor para roxo */
+  text-shadow: 2px 2px 4px #000;    /* Sombra de texto ao passar o mouse */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-1:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo {
+  color: #ec5e5e;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo::after {
+  width: 100%;
+}
+
+
+.nav-link{
+  font-size: 20px;
+
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+/* Animação suave ao passar o mouse no ícone */
+.zoom {
+  transition: transform 0.2s;
+}
+
+/* Aplica efeito de zoom (escala 150%) no hover */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.custom-icon {
+    font-size: 30px; /* aumenta o tamanho */
+    color: white;  /* muda a cor (azul Bootstrap) */
+  }
+
+.txt{
+    border: 10px;
+    border: #ec5e5e;
+}
+
+ .border-purple {
+    border-color: #7b2cbf !important;
+  }
+
+  .text-purple {
+    color: #7b2cbf !important;
+  }
+
+  .search-box .form-control::placeholder {
+    color: #b0b0b0;
+    font-weight: bold;
+  }
+
+  .search-box .form-control,
+  .search-box .input-group-text {
+    border-radius: 0.6rem;
+  }
+
+  .search-box .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #7b2cbf; /* mantém a borda roxa no foco */
+}
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  background-color: #cb6ce6;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #9b51af;
+  color: rgb(255, 255, 255);
+}
+
+.button-login {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  background-color: #6a2fdf;
+  border-color: #5e17eb;
+  color: #ffffff;
+}
+
+.button-login:hover {
+  background-color: #6a2fdf;
+  color: rgb(255, 255, 255);
+}
+
+/*style="background-color: #6a2fdf; border-color: #5e17eb; color: white"*/
+
+.card {
+  box-shadow: 0 0 12px #371b35;
+  border: #371b35 solid 2px;
+}
+
+.p-c {
+  padding-inline-start: 210px;
+}
+.m-c {
+  padding-inline-start: 310px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  border: 2px solid #6d6d6d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #9059ff;
+  outline: none;
+}
+
+.form {
+      background-color: #545454;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 40px;
+      color: white;
+      
+    }
+
+main {
+  margin-top: -65px; /* Ajuste este valor para a altura exata do seu cabeçalho (65px) */
+  position: relative; /* Também essencial para o z-index */
+  z-index: 1; /* Garante que o conteúdo principal fique abaixo do cabeçalho */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.botao {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  border-radius: 14px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  background-color: #6f5a9a;
+  border: 3px solid #bfa8ff80;
+  box-shadow: 0 4px 16px rgba(191, 168, 255, 0.25); 
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+.botao:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(191, 168, 255, 0.3);
+  text-shadow: -1px 2px 1px #f08dcf;
+}
+
+b {
+  color: #ec5e5e;
+}
+
+.voltar{
+  transition-duration: 0.20s;
+  text-decoration: none;
+}
+
+.voltar:hover{
+  transform: scale(1.20);
+}
+
+.required ,
+.span-required {
+  font-size: medium; 
+}
+
+.span-required {
+  color: #cc1919; 
+  display: none;
+}
+
+.event-card {
+  background: #202040;
+  color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 320px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.event-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 16px;
+}
+
+.event-content h4 {
+  margin: 0 0 6px;
+  color: #ffd369;
+}
+
+.event-info {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.event-content p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.event-btn {
+  background: #8a6cff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+a[href*="cadastro_cliente"] .botao {
+  background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("imagens/cadastro-pessoa.png");
+}
+
+a[href*="cadastro_empresa"] .botao {
+  background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("imagens/cadastro-empresa.png");
+}
+
+/* Pagina Login */
+
+.a-1 {
+		color: #ccc;
+		transition: color 0.3s ease;
+	  }
+
+	  .ativo {
+		color: #f75757 !important;
+		font-weight: 500;
+	  }
+	  .form {
+		background-color: #2a2a2a;
+		border: 1px solid #444;
+		border-radius: 6px;
+		color: #fff;
+		padding: 8px 12px;
+		width: 100%;
+	  }
+	  .form:focus {
+		border-color: #9059ff;
+		outline: none;
+		box-shadow: 0 0 0 2px #9059ff60;
+	  }
+	  .button-login {
+		background-color: #6a2fdf;
+		color: #fff;
+		border: none;
+		transition: background-color 0.3s ease;
+	  }
+	  .button-login:hover {
+		background-color: #9059ff;
+	  }
+	  .esquec-senha {
+		color: #ff66c4;
+		text-decoration: none;
+	  }
+	  .esquec-senha:hover {
+		text-decoration: underline;
+	  }

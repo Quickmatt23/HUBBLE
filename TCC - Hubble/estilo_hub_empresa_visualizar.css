@@ -1,0 +1,358 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+/* Fonte 3: Intro-Rust */
+@font-face {
+  font-family: font3;
+  src: url('fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Mantenha aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================== HEADER ======================== */
+/* Define a altura da barra de navegação */
+.e-header {
+  height: 65px;
+
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 24, 36 , 0.8),
+    rgba(34, 20, 39 , 0.8)
+  ); /* Gradiente escuro com transparência */
+
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+}
+
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+/* Estilo base para os links (posição relativa para o pseudo-elemento ::after funcionar) */
+.a-1 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 10px;
+  color: #F4F4F4;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-1::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 2px;
+  background: #ec5e5e;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-1:hover {
+  color: #ec5e5e;                   /* Altera cor para roxo */
+  text-shadow: 2px 2px 4px #000;    /* Sombra de texto ao passar o mouse */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-1:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo {
+  color: #ec5e5e;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo::after {
+  width: 100%;
+}
+
+.nav-link{
+  font-size: 20px;
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+/* Animação suave ao passar o mouse no ícone */
+.zoom{
+  transition: transform 0.3s;
+}
+
+/* Aplica efeito de zoom (escala 150%) no hover */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* ======================== BARRA LATERAL ======================== */
+
+.sidebar {
+  width: 250px;
+  height: 140vh;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(23, 12, 39, 1), rgba(109, 42, 253, 1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: white;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('imagens/Logo 4.png');
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 15px;
+  font-size: 18px;
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-item{
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: #00c2a8b7;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+}
+
+.li-ativo{
+  width: 9px; 
+  background-color: #fafafa;
+  height: 50px; 
+  border-radius: 30px;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+
+.conteudo {
+	flex: 1;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.top-banner {
+	background-image: url("imagens/fundo-6.png");
+	background-size: cover;
+	background-position: center;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	color: white;
+	font-size: 28px;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*============ BOTÕES ===========*/
+
+.button-imagem {
+  display: flex; /* Para centralizar com Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 35px;
+  border: none;
+  width: 506px;
+  height: 100px;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+  background-size: 200% 200%; /* Para animar o gradiente */
+  background-position: left;
+  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.button-imagem:hover {
+  color: white;
+  background: linear-gradient(90deg, rgba(23, 12, 39, 1), rgba(109, 42, 253, 1));
+  background-size: 200% 200%;
+  background-position: right;
+  transition: background-position 0.5s ease, transform 0.5s ease;
+  transform: scale(1.01);
+  box-shadow: 0 0px 50px rgba(255, 255, 255, 0.5);
+}
+
+.button-imagem:active {
+  transform: scale(1);
+  color: white;
+}
+
+.imagem-botao {
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  background-image: url('imagens/adicionar-icon-escuro.png');
+  background-size: cover;
+  transition: background-image 0.5s ease;
+}
+
+.button-imagem:hover .imagem-botao {
+  background-image: url('imagens/adicionar-icon-claro.png');
+}
+
+/*====================================*/
+html, body {
+  overflow-x: hidden;
+}
+/*====================================*/
+
+.imagem{
+  align-items: center;
+  width: 1600px;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url('imagens/fundo-7.jpg');
+  background-size: cover;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+/*====================================*/
+
+.caixa{
+  display: flex; /* Para centralizar com Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 300px;
+  width: 300px;
+  transition: 0.1s;
+}
+
+.caixa:hover{
+  scale: 1.05;
+}
+
+.botao{
+  border: none;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.botao:hover{
+  background-size: 200% 200%;
+  background-position: right;
+  transition: background-position 0.5s ease, transform 0.5s ease;
+  transform: scale(1.01);
+  box-shadow: 0 0px 50px rgba(255, 255, 255, 0.5);
+}
+
+.grafico{
+  color: white;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.137);
+  text-align: center;
+  width: 600px;
+  height: 450px;
+  transition: 0.1s;
+}
+
+.grafico:hover{
+  scale: 1.05;
+}

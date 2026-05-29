@@ -1,0 +1,962 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ======================== HEADER ======================== */
+/* Define a altura da barra de navegação */
+.e-header {
+  height: 65px;
+
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 24, 36 , 0.95),
+    rgba(34, 20, 39 , 0.95)
+  ); /* Gradiente escuro com transparência */
+
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+}
+
+
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+/* Estilo base para os links (posição relativa para o pseudo-elemento ::after funcionar) */
+.a-1 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 10px;
+  color: #F4F4F4;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-1::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 2px;
+  background: #ec5e5e;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-1:hover {
+  color: #ec5e5e;                   /* Altera cor para roxo */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-1:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo {
+  color: #ec5e5e;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo::after {
+  width: 100%;
+}
+
+
+.nav-link{
+  font-size: 20px;
+
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+/* Animação suave ao passar o mouse no ícone */
+.zoom {
+  transition: transform 0.2s;
+}
+
+/* Aplica efeito de zoom (escala 150%) no hover */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+
+.fundo-princip {
+  background-image: url('imagens/fundo_principal.png');
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  margin-left: 00px;
+  left: 0;
+  right: 0;
+}
+
+.nav-bar-perfil, 
+.nav-bar-topicos {
+  padding: 74px 20px;
+  max-width: 400px;
+  margin-top: -60px;
+  min-height: 100%;
+  left: 0;
+}
+
+.nav-bar-topicos {
+  border-top-right-radius: 12px;
+  background-color: #ffffff;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}  
+
+.li-perfil {
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #1a1a1a;
+  transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+}
+
+.li-perfil::after {
+  content: '';
+  position: relative;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-out;
+}
+
+.li-perfil:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.li-perfil:hover::after {
+  width: 100%;
+}
+
+.li-perfil a {
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  padding: 6px 0;
+  transition: color 0.3s ease-out;
+}
+
+.li-perfil a:hover {
+  color: #027c6c;
+  text-decoration: underline;
+}
+
+.navegacao {
+  height: 100%;
+  width: 100%;
+}
+
+/* Itens de menu */
+.li-menu, .li-menu-ativado {
+  list-style: none;   
+  padding-left: 0;
+  margin-bottom: 16px;
+  width: 200px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+.li-menu:hover a {
+  background-color: rgba(0, 194, 168, 0.12);
+  color: #00c2a8;
+}
+
+.selecionado a {
+  color: #00c2a8;
+  border-left: 4px solid #00c2a8;
+  padding-left: 16px;
+}
+
+.selecionado:hover {
+  background-color: rgb(0, 194, 168 , 0.2);
+  border-radius: 7px;
+}
+
+/* Estilo dos ícones */
+.menu i {
+  transition: transform 0.25s ease-out;
+}
+
+.menu a:hover i {
+  transform: scale(1.05);
+}
+
+/* Foto/usuário */
+.foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url('imagens/loos.jpg'); /* se necessário */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease , transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px #7f50dd;
+}
+
+.nav-2 {
+  position: absolute;
+  top: 700px;
+  padding: 24px 16px;
+  border-radius: 16px;
+  width: 240px;
+}
+
+
+h1 {
+  padding-top: 20px;
+  margin-left: 10%;
+  text-shadow: 0 2px 4px black;
+}
+.card {
+  box-shadow:  0 0 10px #000000;
+  border-radius: 20px;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0 0 10px 3px #5f2cc5;
+  border:  2px #5f2cc5;
+  transform: scale(1.02);
+}
+
+b {
+  font-family: font1;
+}
+
+button {
+  font-size: 28px;
+  border: none;
+  width: 230px;
+  height: 40px;
+  border-radius: 7px;
+  color: white;
+  background-color: #6a2fdf;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7c43f0;
+  transform: scale(1.01);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 45px;
+  border: 3px solid #b8b8b8;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6647b2;
+  outline: none;
+}
+
+.container {
+  margin-top: 40px;
+}
+.form {
+      background-color: #545454;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 40px;
+      color: white;
+      
+    }
+
+.btn {
+  width: 240px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-position 0.5s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #2f15b3, #7b53ac);
+  transform: scale(1.07);
+  background-position: 100% 50%;
+}
+
+.btn:active {
+  transform: scale(1);
+}
+.btn-purple {
+  background-color: #6a2fdf;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: 260px;
+}
+
+.btn-purple:hover {
+  background-color: #9059ff;
+  color: #fff;
+  border: solid 2px #9059ff ;
+}
+
+.linha-eventos {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+.btn-dark {
+  box-shadow: -6px 5px 0 #5f2cc5;
+}
+
+.titulo-categoria {
+  font-size: 30px;
+  transition: transform 0.5s ease;
+  margin-bottom: 20px;
+}
+
+.titulo-categoria:hover {
+  transform: translateX(20px);
+  text-decoration: underline;
+}
+
+.sub-cat {
+  transition-duration: 0.5;
+}
+
+.slide-right {
+  transform: translateX(20px);
+}
+
+
+.card-cat {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 9px #1a1a1a;
+  height: 150px;
+  padding: 20px 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.top1:hover {
+  border: 2px solid rgb(54, 89, 155);
+}
+
+.top2:hover {
+  border: 2px solid rgb(26, 175, 138);
+}
+
+.top3:hover {
+  border: 2px solid rgb(224, 228, 6);
+}
+
+.top4:hover {
+  border: 2px solid rgb(228, 50, 6);
+}
+
+.top5:hover {
+  border: 2px solid rgb(6, 128, 228);
+}
+
+.top6:hover {
+  border: 2px solid #1a1a1a;
+}
+
+.card-cont {
+  transition: transform 0.6s ease;
+}
+
+.card-cat:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 5px #1a1a1a;
+  background-color: #ffffff; /* branco */
+}
+.card-cat:active {
+  transform: scale(1);
+}
+
+.icon-cat {
+  width: 70px; /* antes: 70px */
+  margin-bottom: 10px;
+}
+
+
+.label-cat {
+  font-size: 20px; /* ou use fs-4 no HTML */
+  margin: 0;
+}
+
+.event-card {
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 13px;
+  overflow: hidden;
+  height: fit-content;
+  box-shadow: 0 0 15px #1a1a1a; 
+  transition: transform 0.3s;
+  display: flex;
+  max-width: 480px; 
+  max-height: 420px; 
+  flex-direction: column;
+  font-size: 0.85rem; 
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-dest {
+  animation: destaquePulseRGB 10s infinite;
+  box-shadow: 0 0 15px #a020f088; 
+  transition: transform 0.3s;
+  max-height: 520px; 
+  width: 100%;
+}
+
+.event-dest:hover {
+  transform: scale(1.02);
+}
+
+.event-img {
+  width: 100%;
+  height: 120px; /* reduzido */
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 12px; /* reduzido */
+}
+
+.event-content h4 {
+  margin: 0 0 6px;
+  color: #ffd369;
+  font-size: 22px; /* reduzido de 30px */
+}
+
+.event-info {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.75rem; /* reduzido */
+  color: #aaa;
+}
+
+.event-content p {
+  font-size: 0.78rem; /* reduzido */
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.event-btn-dest {
+  background: #8a6cff;
+  border: none;
+  color: white;
+  padding: 6px 22px; /* reduzido */
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 17px; 
+}
+
+.event-btn {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 130px;
+  height: 35px;
+  margin-top: 16px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, border 0.2s ease;
+}
+
+
+.event-btn:active {
+  transform: scale(1);
+}
+
+/* ======================== Carroseis ======================== */
+
+.mySwiper {
+  padding: 80px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px; /* ou o que funcionar melhor para seu layout */
+  overflow: visible;
+  margin-top: 130px;
+  margin-bottom: 180px;
+}
+
+.mySwiper .wrapper-princp {
+  align-items: center;
+}
+
+.mySwiper .slide-princip {
+  width: 450px;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 3px;
+  opacity: 0.5;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mySwiper .swiper-slide {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.mySwiper .swiper-slide-active {
+  transform: scale(2);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.mySwiper .swiper-slide-active:hover {
+  transform: scale(2.1);
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  top: 50%;
+  border: inset 2px rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.swiper-button-prev-cards,
+.swiper-button-next-cards {
+  border: solid 2px rgb(95, 44, 197 , 0.5);
+}
+.swiper-button-prev-cards:hover,
+.swiper-button-next-cards:hover {
+  transform: scale(1.01);
+}
+
+
+.swiper-button-prev:hover
+.swiper-button-next:hover {
+  transform: scale(1.5);
+}
+
+.swiper-button-prev {
+  left: -400px; /* ou use 0 se preferir encostar na borda */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover com brilho e escala */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Ícones maiores */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: -400px;
+}
+
+
+
+@media (max-width: 768px) {
+  .swiper-princ {
+    padding: 40px 0;
+  }
+
+  .slide-princip {
+    width: 260px;
+    height: 160px;
+    font-size: 16px;
+  }
+
+  .slide-princip-active {
+    width: 320px !important;
+    height: 180px !important;
+    font-size: 18px;
+  }
+}
+
+
+.slide-princip {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+/* Quando está ativo, aumenta o opacity */
+.swipper-slide-active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* AQUI o zoom acontece */
+.slide-princip-active .slide-inner {
+  transform: scale(1.08); /* ou 1.1 */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Conteúdo visual com background */
+.slide-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.conteudo-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  padding: 10px;
+  border-radius: 6px;
+  width: 50%;
+  font-size: 10px;
+  transition: transform 0.4s ease;
+  text-align: justify;
+}
+
+.text-toggle {
+  color: #b399f5;  /* roxo vibrante */ 
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.text-toggle:hover {
+  text-decoration: underline;
+}
+
+.slide-princip:hover .conteudo-overlay{
+  transform: translateY(-6px);
+}
+
+.conteudo-overlay , .slide-inner:hover {
+  transform: translateY(1px);
+}
+
+
+.conteudo-overlay h2 {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.conteudo-overlay p {
+  margin: 5px ;
+  font-weight: 100;
+  font-size: 7.5px;
+}
+
+.event-btn {
+  border: solid 1px white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 80%;
+  height: 20px;
+  margin-top: 7px;
+  font-size: 9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+.event-btn:hover {
+  background-color: #7c43f0;
+  transform: scale(1.02);
+  border: solid 2px #7c43f0; /* Evita salto no layout ao remover a borda */
+}
+
+.event-btn:active {
+  transform: scale(1);
+}
+
+
+
+
+
+.mySwiperVagas {
+  margin-top: -40px;
+	width: 100%;
+	padding: 30px 0;
+}
+.mySwiperVagas .swiper-slide {
+	transition: transform 0.3s ease;
+}
+.mySwiperVagas .swiper-slide:hover {
+	transform: scale(1.02);
+}
+
+
+
+.swiper-button-prev-cards,
+.swiper-button-next-cards {
+  color: black;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev-cards {
+  left: 10px;
+}
+
+.swiper-button-next-cards {
+  right: 10px;
+}
+
+
+/*  CARDS DE NOTICIA */
+
+.news-card-dest {
+  position: relative;
+  border-radius: 10px;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 1900px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 20px black;
+}
+
+.news-card-dest:hover {
+  box-shadow: inset 0 0 7900px rgba(0, 0, 0, 0.5); 
+  transform: scale(1.015);
+  cursor: pointer;
+}
+
+.news-desc-dest {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  width: 400px;
+  font-size: 10px;
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease, transform 0.4s ease;
+}
+
+.news-sub {
+  height: 180px; 
+  width: 350px;
+}
+
+.news-sub-dest {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  color: white;
+  padding: 10px;
+  width: 270px;
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease, transform 0.4s ease;
+}
+
+
+.news-card-dest:hover .news-desc-dest {
+  transform: translateY(-10px);
+}
+
+.news-sub-dest p {
+  text-shadow: 0 0 20px black;
+  font-size: 11px;
+  text-align: justify;
+}
+.news-sub-dest h3 {
+  text-shadow: 0 0 20px black;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.news-sub:hover .news-sub-dest {
+  transform: translateY(-5px);
+}
+
+.news-desc-dest h3,
+.news-desc-dest p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.news-desc-dest h3  {
+  font-weight: 700;
+}
+
+.news-desc-dest p {
+  text-shadow: 0 0 70px black;
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+.tag {
+  font-size: 6px;
+  margin: 2px;
+  padding: 3px;
+  border-radius: 3px; 
+  background-color: #6647b2;
+  background: linear-gradient(135deg, #6e53f5, #b374ff);
+  color: white;
+  display: inline-flex;
+  font-weight: 100;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,379 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+/* Fonte 3: Intro-Rust */
+@font-face {
+  font-family: font3;
+  src: url('fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
+}
+
+a {
+  text-decoration: none;
+}
+
+.fundo{
+  background-image: url("imagens/evento_dest.png"); /* Mantenha aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.imagens {
+  margin: 100px;
+  width: 700px;
+  height: 350px; /* aumentada para imagens visíveis */
+  background-color: darkgray;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imagens img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.voltar {
+  font-size: 23px;
+  padding-top: 30px;
+  color: white;
+  transition: text-decoration 0.3s ease, transform 0.3s;
+}
+
+.voltar:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.principal {
+  color: white;
+  padding: 30px;
+  margin-left: 150px ;
+}
+
+.principal h1 {
+  font-weight: 500;
+  font-size: 55px;
+  text-shadow: 0 10px 20px #1a1a1a;
+}
+
+.carousel .slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.principal p {
+  font-size: 18px;
+}
+
+button {
+  background-color: #a578ff;
+  border: none;
+  color: white;
+  font-size: 21px;
+  border-radius: 7px;
+  width: 350px;
+  padding: 20px;
+  transition: 
+    transform 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    box-shadow 0.5s ease;
+}
+
+.btn {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #9170d3, #b374ff);
+  box-shadow: 0 8px 20px rgba(144, 89, 255, 0.4);
+}
+
+button:active {
+  transform: scale(1);
+}
+.vaga {
+  margin: 30px; 
+  box-shadow: 0 0 10px #1a1a1a;
+}
+.gostei {
+  color: white;
+  font-size: 30px;
+}
+
+.gostei a{
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+.gostei a:hover{
+  transform: scale(1.1);
+}
+
+.info {
+  margin: 50px;
+}
+
+.compartilhe {
+  color: white;
+  font-size: 20px;
+}
+
+.compartilhe i {
+  
+  font-size: 30px;
+  color: white;
+}
+
+.compartilhe a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.compartilhe a:hover {
+  transform: scale(1.2)
+}
+
+.sobre {
+  border: none;
+  margin: 50px;
+  border-radius: 7px;
+  width: 2000px;
+}
+
+.card-vaga {
+  transition: transform 0.3s ease , border 0.3s ease;
+}
+.card-vaga:hover {
+  transform: scale(1.05);
+}
+
+.sobre h2{
+  padding: 20px;
+  font-weight: 700;
+}
+  
+
+.desc {
+  padding: 30px;
+  color: #444343;
+}
+
+
+.pub {
+
+  width: 600px;
+  height: 700px;
+  margin: 50px;
+}
+
+.adicional {
+  text-align: center;
+  padding: 50px;
+}
+
+.filtros {
+  width: 500px;
+  text-align: center;
+}
+
+.adicional h3 {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.descricao-completa {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+.desc {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 450px; /* altura padrão ao carregar */
+}
+
+.desc.expandida {
+  max-height: 860px; /* altura expandida */
+}
+
+  .ver-mais-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .ver-mais-btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .ver-mais-btn:hover {
+    text-decoration: underline;
+  }
+
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+.foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease , transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+}
+
+.participantes {
+  padding: 50px;
+}
+
+.participante {
+  padding: 20px;
+}
+.participante p {
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.card-fornecedor {
+  padding: 40px;
+  margin: 40px;
+  margin-left: 100px;
+  width: 900px;
+}
+
+.card-fornecedor h3 {
+  padding: 10px;
+}
+
+
+
+.shadow-custom {
+  background: #ffffff;
+  border-radius: 6px; /* Menos arredondado = mais retangular */
+  padding: 40px 50px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gostei i {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.gostei i.clicked {
+  color: #ec6570; /* vermelho */
+  transform: scale(1.3);
+}
+
+/* Cartões mais retangulares */
+.card-fornecedor {
+  width: 800px;
+  min-height: 360px;
+  color: #333;
+  display: flex;
+
+  justify-content: center;
+}
+
+.card-filtros {
+  border: solid 1px #1a1a1a;
+  width: 500px;
+  min-height: 360px;
+  text-align: center;
+}
+
+.card-filtros h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.filtros-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dados-fornecedor p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.dados-fornecedor a {
+  color: #6e53f5;
+  font-weight: 500;
+}
+
+.dados-fornecedor a:hover {
+  text-decoration: underline;
+}
+
+/* Tags continuam com estilo bonito */
+.tag {
+  font-size: 18px;
+  margin: 3px;
+  padding: 12px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #6e53f5, #b374ff);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+

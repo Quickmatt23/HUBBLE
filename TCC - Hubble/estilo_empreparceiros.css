@@ -1,0 +1,256 @@
+/* ======================== FONTES PERSONALIZADAS ======================== */
+/* Fonte 1: Poppins Bold */
+@font-face {
+  font-family: font1;
+  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+/* Fonte 2: Molgan Regular */
+@font-face {
+  font-family: font2;
+  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+/* Fonte 3: Intro-Rust */
+@font-face {
+  font-family: font3;
+  src: url('fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4;
+  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* Classe para aplicar a fonte Poppins */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+/* Classe para aplicar a fonte Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
+}
+
+/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
+}
+
+.fundo-logo{
+  background-image: url("imagens/fundo-5.png"); /* Mantenha aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ======================== HEADER ======================== */
+/* Define a altura da barra de navegação */
+.e-header {
+  height: 65px;
+
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 24, 36 , 0.8),
+    rgba(34, 20, 39 , 0.8)
+  ); /* Gradiente escuro com transparência */
+
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+}
+
+/* ======================== LINKS DE NAVEGAÇÃO ======================== */
+/* Estilo base para os links (posição relativa para o pseudo-elemento ::after funcionar) */
+.a-1 {
+  position: relative;                /* Necessário para o ::after se posicionar corretamente */
+  display: inline-block;            /* Permite aplicar borda e largura como bloco */
+  font-size: 10px;
+  color: #F4F4F4;                   /* Cor inicial dos links */
+  transition: color 0.3s, text-shadow 0.3s;  /* Transições suaves ao passar o mouse */
+}
+
+/* Linha de destaque animada que aparece ao passar o mouse (pseudo-elemento) */
+.a-1::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                     /* Posição abaixo do texto */
+  left: 0;
+  width: 0;                         /* Inicialmente invisível */
+  height: 2px;
+  background: #ec5e5e;              /* Cor da linha (roxo escuro) */
+  transition: width 0.3s ease-in-out; /* Animação de crescimento lateral */
+}
+
+/* Estilo quando o link é hover (mouse por cima) */
+.a-1:hover {
+  color: #ec5e5e;                   /* Altera cor para roxo */
+  text-shadow: 2px 2px 4px #000;    /* Sombra de texto ao passar o mouse */
+  text-decoration: none;           /* Remove sublinhado padrão */
+}
+
+/* Expande a linha ao passar o mouse */
+.a-1:hover::after {
+  width: 100%;
+}
+
+/* Estilo para o link ativo (representa a página atual) */
+.ativo {
+  color: #ec5e5e;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+/* Linha abaixo do link ativo (sempre visível) */
+.ativo::after {
+  width: 100%;
+}
+
+
+.nav-link{
+  font-size: 20px;
+
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+/* Animação suave ao passar o mouse no ícone */
+.zoom {
+  transition: transform 0.2s;
+}
+
+/* Aplica efeito de zoom (escala 150%) no hover */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.custom-icon {
+    font-size: 30px; /* aumenta o tamanho */
+    color: white;  /* muda a cor (azul Bootstrap) */
+  }
+
+.txt{
+    border: 10px;
+    border: #ec5e5e;
+}
+
+ .border-purple {
+    border-color: #7b2cbf !important;
+  }
+
+  .text-purple {
+    color: #7b2cbf !important;
+  }
+
+  .search-box .form-control::placeholder {
+    color: #b0b0b0;
+    font-weight: bold;
+  }
+
+  .search-box .form-control,
+  .search-box .input-group-text {
+    border-radius: 0.6rem;
+  }
+
+  .search-box .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #7b2cbf; /* mantém a borda roxa no foco */
+}
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  background-color: #cb6ce6;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #9b51af;
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  box-shadow: 0 0 12px #000000;
+  border: #000000 solid 2px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.p-c {
+  padding-inline-start: 210px;
+}
+.m-c {
+  padding-inline-start: 310px;
+}
+
+.a {
+  font-weight: bolder;
+  color: #6a2fdf;
+}
+
+.sombra {
+  text-shadow: 0 2px 4px black;
+}
+/*teste =======================================*/
+
+.card {
+  background-color: #121212;
+  color: white;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.card-body {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 1rem 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.3rem 0;
+}

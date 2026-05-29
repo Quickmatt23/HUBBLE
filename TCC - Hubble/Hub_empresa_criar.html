@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hubble | HUB Empresa | Criar Evento</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+	<!--ESTILO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="estilo_hub_empresa_criar.css">
+	</head>
+  	<body style="background-color: #ffffff;">
+		<main>
+			<!-- SIDEBAR -->
+			<div class="layout">
+				<div class="fundo-sidebar">
+					<nav class="sidebar">
+						<div class="sidebar-content">
+							<div class="profile-section">
+								<div class="profile-pic"></div>
+							</div>
+							<ul class="menu">
+								<li class="li-menu">
+								<a href="#">
+									<div class="icon perfil-icon"></div>
+									<span class="popp-font-2">Perfil da empresa</span>
+								</a>
+								</li>
+							
+								<li class="li-menu selecionado">
+								<a href="Hub_empresa.html">
+									<div class="icon criar-icon"></div>
+									<span class="popp-font-2">Criar e gerenciar</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Hub_empresa_dados.html">
+									<div class="icon dados-icon"></div>
+									<span class="popp-font-2">Dados</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Login.html">
+									<div class="icon sair-icon"></div>
+									<span class="popp-font-2">Sair</span>
+								</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				
+				<!-- CONTEÚDO PRINCIPAL -->
+				<div class="conteudo d-flex justify-content-between ">
+					<div class="timeline" style="display: flex; justify-content: center;">
+						<div style="display: flex; justify-content: center;">
+							<a href="Hub_empresa.html" class="voltar popp-font-2">
+								<div class="voltar-imagem"></div>
+								Voltar para o HUB
+							</a>
+						</div>
+						<div class="step active">
+						  <div class="number">1</div>
+						  <div class="label active">Detalhes do evento</div>
+						</div>
+						<div class="step">
+						  <div class="number">2</div>
+						  <div class="label">Data e Local</div>
+						</div>
+						<div class="step">
+						  <div class="number">3</div>
+						  <div class="label">Ingressos e participação</div>
+						</div>
+						<div class="step">
+						  <div class="number">4</div>
+						  <div class="label">Mídias e identidade</div>
+						</div>
+						<div class="step">
+						  <div class="number">5</div>
+						  <div class="label">Contato e organização</div>
+						</div>
+						<div class="step">
+						  <div class="number">6</div>
+						  <div class="label">Revisão e finalização</div>
+						</div>
+					</div>
+					<div class="container my-5 formulario">
+						<h3 class="popp-font">Detalhes do Evento</h3>
+						<br>
+						<!-- Título e botão -->
+						<div class="row mb-3 align-items-center">
+							<div class="col">
+								<label for="" class="form-label popp-font">Título do evento</label>
+								<input type="text" class="form-control popp-font-2" placeholder="Exemplo: Show de Fulano/Exposição de Arte/Etc." value="Festival de Inovação 2025">
+							</div>
+						</div>
+
+						<!-- Linha 1: Descrição curta e Destaques -->
+						<div class="row">
+							<div class="col-md-6">
+								<label for="" class="form-label popp-font">Descrição curta</label>
+								<input type="text" class="form-control popp-font-2" placeholder="Prévia exibida antes do usuário clicar no evento" value="Um encontro que reúne startups, investidores, estudantes e empresas para compartilhar conhecimento e lançar ideias inovadoras.">
+							</div>
+						  <div class="col-md-6">
+							<label for="" class="form-label popp-font">Destaques</label>
+							<input type="text" class="form-control popp-font-2" placeholder="Destaques do evento: estacionamento grátis, restaurante, etc" value="Buffet de graça">
+						  </div>
+						</div>
+
+						<br>
+						<!-- Linha 2: Descrição completa e Apoio/Público -->
+						<div class="row">
+						  <div class="col-md-6">
+							<label for="" class="form-label popp-font">Descrição completa</label>
+							<textarea class="form-control popp-font-2" placeholder="Descrição aprofundada detalhando todo o evento">Um encontro dinâmico que conecta startups, investidores, estudantes e empresas em um ambiente colaborativo, voltado para a troca de conhecimento, networking estratégico e o lançamento de ideias inovadoras. Um espaço onde oportunidades surgem, parcerias se formam e o futuro do empreendedorismo ganha forma.</textarea>
+						  </div>
+						  <div class="col-md-6">
+							<label for="" class="form-label popp-font">Apoio (opcional)</label>
+							<textarea class="form-control popp-font-2 textarea2" placeholder="Exemplo: Teatro Municipal/Empresa">Center Shopping Uberlândia</textarea>
+							<div>
+								<label for="" class="form-label popp-font" style="margin-top: 30px;">Público alvo</label>
+								<input type="text" name="" id="" class="form-control popp-font-2" aria-label="Default select example" style="background-color: #f0f0f0;" value="Profissionais de TI, estudantes, empreendedores">
+							</div>
+						  </div>
+						</div>
+					  
+						<br>
+						<!-- Linha 3: Categorias e Classificação -->
+						<div class="row">
+						  <div class="col-md-6">
+
+							<div class="multiselect-dropdown">
+								<label for="" class="form-label popp-font">Tags do eventos</label>
+								<button class="form-control dropdown-toggle popp-font-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="multiSelectBtn">
+								Selecione...
+								</button>
+								<ul class="dropdown-menu popp-font-2" id="multiSelectMenu">
+									<li><label class="dropdown-item"><input type="checkbox" value="tecnologia"> Tecnologia</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="educacao"> Educação</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="empreendedorismo"> Empreendedorismo</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="cultura"> Cultura</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="musica"> Música</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="esportes"> Esportes</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="gastronomia"> Gastronomia</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="meio-ambiente"> Meio Ambiente</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="voluntariado"> Voluntariado</label></li>
+									<li><label class="dropdown-item"><input type="checkbox" value="negocios"> Negócios</label></li>
+
+								</ul>
+							</div>
+
+							<p class="mt-3 popp-font-2">Selecionado(s): <span id="selectedOutput">Nenhum</span></p>
+
+							<script>
+								const checkboxes = document.querySelectorAll('#multiSelectMenu input[type="checkbox"]');
+								const button = document.getElementById('multiSelectBtn');
+								const output = document.getElementById('selectedOutput');
+
+								function updateSelection() {
+								const selected = Array.from(checkboxes)
+									.filter(cb => cb.checked)
+									.map(cb => cb.parentElement.textContent.trim());
+
+								button.textContent = selected.length > 0 ? selected.join(', ') : 'Selecione...';
+								output.textContent = selected.length > 0 ? selected.join(', ') : 'Nenhum';
+								}
+
+								checkboxes.forEach(cb => cb.addEventListener('change', updateSelection));
+							</script>						
+						  </div>
+						
+							<div class="d-flex justify-content-end">
+								<a href="Hub_empresa_criar_2.html" class="btn button-imagem popp-font-2 d-flex align-items-center gap-2 mx-4">		
+									Próximo
+									<div class="imagem-botao-ir"></div>						
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div> <!-- LAYOUT-->
+		</main>
+		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+		<!-- JS -->
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  	</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hubble | HUB Empresa | Criar Evento</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+	<!--ESTILO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="estilo_hub_empresa_criar.css">
+	</head>
+  	<body style="background-color: #ffffff;">
+		<main>
+			<!-- SIDEBAR -->
+			<div class="layout">
+				<div class="fundo-sidebar">
+					<nav class="sidebar">
+						<div class="sidebar-content">
+							<div class="profile-section">
+								<div class="profile-pic"></div>
+							</div>
+							<ul class="menu">
+								<li class="li-menu">
+								<a href="#">
+									<div class="icon perfil-icon"></div>
+									<span class="popp-font-2">Perfil da empresa</span>
+								</a>
+								</li>
+							
+								<li class="li-menu selecionado">
+								<a href="Hub_empresa.html">
+									<div class="icon criar-icon"></div>
+									<span class="popp-font-2">Criar e gerenciar</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Hub_empresa_dados.html">
+									<div class="icon dados-icon"></div>
+									<span class="popp-font-2">Dados</span>
+								</a>
+								</li>
+							
+								<li class="li-menu">
+								<a href="Login.html">
+									<div class="icon sair-icon"></div>
+									<span class="popp-font-2">Sair</span>
+								</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				
+				<!-- CONTEÚDO PRINCIPAL -->
+				<div class="conteudo d-flex justify-content-between ">
+					<div class="timeline" style="display: flex; justify-content: center;">
+						<div style="display: flex; justify-content: center;">
+							<a href="Hub_empresa.html" class="voltar popp-font-2">
+								<div class="voltar-imagem"></div>
+								Voltar para o HUB
+							</a>
+						</div>
+						<div class="step">
+						  <div class="number">1</div>
+						  <div class="label">Detalhes do evento</div>
+						</div>
+						<div class="step">
+						  <div class="number">2</div>
+						  <div class="label">Data e Local</div>
+						</div>
+						<div class="step">
+						  <div class="number">3</div>
+						  <div class="label">Ingressos e participação</div>
+						</div>
+						<div class="step active">
+						  <div class="number">4</div>
+						  <div class="label active">Mídias e identidade</div>
+						</div>
+						<div class="step">
+						  <div class="number">5</div>
+						  <div class="label">Contato e organização</div>
+						</div>
+						<div class="step">
+						  <div class="number">6</div>
+						  <div class="label">Revisão e finalização</div>
+						</div>
+					</div>
+					<div class="container my-5 formulario">
+							<h3 class="popp-font">Mídias e Identidade Visual</h3>
+							<br>
+
+							<!-- Linha 1: Upload de Imagem de Capa -->
+							<div class="row mb-3">
+								<div class="col-md-12">
+								<label class="form-label popp-font">Imagem de Capa do Evento</label>
+								<input type="file" class="form-control popp-font-2" accept="image/*">
+								<small class="form-text text-muted popp-font-2">Tamanho recomendado: 1200x600px. Formatos: JPG, PNG.</small>
+								</div>
+							</div>
+
+							<!-- Linha 2: Logotipo (opcional) -->
+							<div class="row mb-3">
+								<div class="col-md-12">
+								<label class="form-label popp-font">Logotipo do Evento ou Organização (opcional)</label>
+								<input type="file" class="form-control popp-font-2" accept="image/*">
+								<small class="form-text text-muted popp-font-2">Formato PNG com fundo transparente preferencialmente.</small>
+								</div>
+							</div>
+
+							<!-- Linha 3: Vídeo de Apresentação -->
+							<div class="row mb-3">
+								<div class="col-md-12">
+								<label class="form-label popp-font">Link de Vídeo Promocional (YouTube, Vimeo...)</label>
+								<input type="url" class="form-control popp-font-2" placeholder="https://youtube.com/...." value="https://youtu.be/teaser-inova2025">
+								</div>
+							</div>
+
+							<!-- Linha 4: Cores e Hashtags -->
+							<div class="row mb-3">
+								<div class="col-md-6">
+								<label class="form-label popp-font">Cor Principal do Evento</label>
+								<input type="color" class="form-control form-control-color" value="#6a2fdf" title="Escolha uma cor">
+								</div>
+								<div class="col-md-6">
+								<label class="form-label popp-font">Hashtags Oficiais</label>
+								<input type="text" class="form-control popp-font-2" placeholder="#exemplo #evento2025" value="#Inova2025 #FestivalTech">
+								</div>
+							</div>
+
+							<!-- Linha 5: Redes Sociais -->
+							<div class="row mb-3">
+								<div class="col-md-6">
+								<label class="form-label popp-font">Instagram</label>
+								<input type="url" class="form-control popp-font-2" placeholder="https://instagram.com/seuevento" value="https://instagram.com/inova2025">
+								</div>
+								<div class="col-md-6">
+								<label class="form-label popp-font">Facebook</label>
+								<input type="url" class="form-control popp-font-2" placeholder="https://facebook.com/seuevento" value="https://facebook.com/inova2025">
+								</div>
+							</div>
+
+							<div class="row mb-3">
+								<div class="col-md-6">
+								<label class="form-label popp-font">TikTok (opcional)</label>
+								<input type="url" class="form-control popp-font-2" placeholder="https://tiktok.com/@seuevento">
+								</div>
+								<div class="col-md-6">
+								<label class="form-label popp-font">Site Oficial (opcional)</label>
+								<input type="url" class="form-control popp-font-2" placeholder="https://www.seuevento.com" value="https://www.festivalinovacao.com.br">
+								</div>
+							</div>
+
+						<!-- Botão Próximo -->
+						<div class="d-flex justify-content-end" style="margin-top: -4px;">
+							<a href="Hub_empresa_criar_3.html" class="btn button-imagem popp-font-2 d-flex align-items-center gap-2 mx-4">
+								<div class="imagem-botao-voltar"></div>
+								Voltar
+							</a>
+							<a href="Hub_empresa_criar_5.html" class="btn button-imagem popp-font-2 d-flex align-items-center gap-2 mx-4">
+								Próximo
+							<div class="imagem-botao-ir"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- LAYOUT-->
+		</main>
+	<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+	</footer>
+	<!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  	</body>
+</html>

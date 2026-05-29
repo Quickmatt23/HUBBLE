@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hubble | HUB Cliente</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+	<!--ESTILO-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="estilo_hub.css">
+	<!--JS-->
+	<script></script>
+	</head>
+  	<body>
+		<main>
+		<nav2 class="nav-2">
+			<div class="popp-font-2 nav-bar-perfil d-flex justify-content-around ">
+
+				<div class="dropdown d-flex align-items-center gap-2">
+					<div class="foto" data-bs-toggle="dropdown" aria-expanded="false"></div>
+					<ul class="dropdown-menu dropdown-menu-dark dropdown-menu">
+						<li style="padding: 10px;"><a class="dropdown-item" href="perfil.html"><i class="bi bi-person-fill me-2"></i>Meu Perfil</a></li>
+						<li style="padding: 10px;"><a class="dropdown-item" href="eventos_curtidos.html"><i class="bi bi-heart-fill me-2"></i>Eventos curtidos</a></li>
+						<li style="padding-top: 10px;"><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="Login.html"><i class="bi bi-box-arrow-left me-2"></i>Logout</a></li>
+					</ul>
+				</div>
+
+			</div>
+				
+			<div class="popp-font nav-bar-topicos">
+				<ul class="menu">
+					<li class="li-menu-ativado selecionado">
+						<a href="#">
+						<i class="bi bi-house-fill fs-1"></i>
+						<span>Início</span>
+						</a>
+					</li>
+					<li class="li-menu">
+						<a href="#"><i class="bi bi-newspaper fs-1 pe-3"></i><span>Notícias e editais</span></a>
+					</li>
+					<li class="li-menu">
+						<a href="#"><i class="bi bi-calendar-event fs-1 pe-3"></i><span>Eventos</span></a>
+					</li>
+					<li class="li-menu">
+						<a href="#"><i class="bi bi-briefcase-fill fs-1 pe-3"></i><span>Vagas</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav2>
+			
+		<div class="fundo-princip popp-font-2 pt-2" >
+			
+			
+			<!-- Carrossel -->
+					
+			<div class="destaque d-flex" style="overflow:hidden ;" >
+				<div class="swiper swiper-princp mySwiper">
+					<div class="swiper-wrapper wrapper-princp ">
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/show_angra.png);">
+								<div class="conteudo-overlay">
+								<h2><b>Show angra Maria</b></h2>
+								<div class="d-flex justify-content-around align-items-left flex-wrap gap-2">
+									<span class="tag">Show/Música</span>
+									<span class="tag">Rock</span>
+									<span class="tag">Rap</span>
+									<span class="tag">Ingressos disponíveis</span>
+									<span class="tag">16+</span>
+								</div>
+
+								<!-- Texto com "ver mais" -->
+								<p>
+									Prepare-se para uma noite inesquecível! No próximo sábado, Uberlândia será palco do Show Angra Maria
+									<span class="collapse" id="textoIvete">
+										uma experiência musical única que mistura o peso do rock progressivo com a força do canto popular brasileiro.A banda Angra Maria, sucesso crescente no cenário alternativo nacional, traz para o palco um espetáculo vibrante, recheado de luzes
+									</span>
+									<a  class="text-toggle fw-bold" data-bs-toggle="collapse" href="#textoIvete" role="button" aria-expanded="false" aria-controls="textoIvete">
+										Ver mais 
+									</a>
+								</p>
+
+								<!-- Botão padrão -->
+								<a href="Evento.html">
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/evento_destaque2.png);">
+								<div class="conteudo-overlay">
+								<h2><b>E4 Uberlândia 2025</b></h2>
+								<div class="d-flex justify-content-around ">
+									<span class="tag">Tecnologia</span>
+									<span class="tag">Jogos</span>
+									<span class="tag">Público</span>
+									<span class="tag">Em Breve</span>
+								</div>
+								<p>
+									Prepare-se, Uberlândia! A E4 Uberlândia 2025 está chegando para transformar a cidade no epicentro
+									<span class="collapse" id="textoIvete">
+										dos jogos eletrônicos! De 12 a 15 de Junho, venha vivenciar a evolução dos games como nunca antes.
+									</span>
+									<a class="text-toggle fw-bold" data-bs-toggle="collapse" href="#textoIvete" role="button" aria-expanded="false" aria-controls="textoIvete">
+										Ver mais 
+									</a>
+								</p>
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/evento_destaque3.png);">
+								<div class="conteudo-overlay">
+								<h2><b>Fitness & Bem-Estar</b></h2>
+								<div class="d-flex justify-content-around align-items-left">
+									<span class="tag">Esporte</span>
+									<span class="tag">Público</span> 
+									<span class="tag">Saúde</span>
+								</div>
+								<p>
+									Prepare-se para transformar seu corpo e mente na Uberlândia Fitness & Bem-Estar Expo
+									<span class="collapse" id="textoIvete">
+										, o evento que reúne o melhor do universo fitness, saúde e qualidade de vida no coração do Triângulo Mineiro
+									</span>
+									<a class="text-toggle fw-bold" data-bs-toggle="collapse" href="#textoIvete" role="button" aria-expanded="false" aria-controls="textoIvete">
+										Ver mais 
+									</a>
+								</p>
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/evento_destaque4.png);">
+								<div class="conteudo-overlay">
+								<h2><b>Sabor da Serra</b></h2>
+								<div class="d-flex justify-content-around align-items-left">
+									<span class="tag">Culinária</span>
+									<span class="tag">Espaço infantil</span>
+									<span class="tag">Ingressos disponíveis</span>
+								</div>
+								<p>
+									Pepare-se para mergulhar no universo da inovação e do empreendedorismo tecnológico na Uberlândia InovaTech, o evento que visa conectar mentes criativas, startups promissoras e investidores visionários em Uberlândia e região
+								</p>
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/evento_destaque5.png);">
+								<div class="conteudo-overlay">
+								<h2><b>Uberlândia InovaTech</b></h2>
+								<div class="d-flex justify-content-around align-items-left">
+									<span class="tag">Tecnologia</span>
+									<span class="tag">Startups</span>
+									<span class="tag">Inovação</span>
+									<span class="tag">Futuro</span>
+								</div>
+								<p>
+									Prepare-se para maior feira de inovação de Minas , a InovaTech promete Trazer as maiores idéias e tendencias do Futuro da tecnologia.
+								</p>
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-princip">
+							<div class="slide-inner" style="background-image: url(imagens/evento_destaque6.png);">
+								<div class="conteudo-overlay">
+								<h2><b>ExpoTech</b></h2>
+								<div class="d-flex justify-content-around align-items-left">
+									<span class="tag">Tecnologia</span>
+									<span class="tag">Show/Música</span>
+									<span class="tag">Ingressos disponíveis</span>
+								</div>
+								<p>
+									A Feira de Tecnologia de Uberlândia é um evento imperdível para entusiastas, profissionais e empresas
+									<span class="collapse" id="textoIvete">
+										 do setor. Com foco em inovação, tendências de mercado e soluções tecnológicas, a feira contará com exposição de produtos, palestras com especialistas renomados, workshops interativos e um espaço dedicado a startups
+									</span>
+									<a class="text-toggle fw-bold" data-bs-toggle="collapse" href="#textoIvete" role="button" aria-expanded="false" aria-controls="textoIvete">
+										Ver mais 
+									</a>
+								</p>
+								<center><div class="event-btn">Saiba Mais</div></center>
+								</div>
+							</div>
+						</div>
+						
+
+					</div>
+
+					<!-- Navegação -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				</div>
+			</div>	
+			<div class="container popp-font-2" style="width: 70%;">
+
+				<div class="d-flex justify-content-around align-items-center" style="gap: 12px;" >
+					<p><img src="imagens/icone_busca.png" class="icone-busca" style="width: 50px;"></p>
+					<input type="text" class="form-custom mb-3 input-busca" placeholder="">
+				</div>	
+				<div class="d-flex justify-content-around mt-1 ms-5" style="gap: 20px;">
+					<button class="btn btn-dark" >Arte</button>
+					<button class="btn btn-dark">Show/Música</button>
+					<button class="btn btn-dark">Desenvolvedor</button>
+					<button class="btn btn-dark">Tecnologia</button>		
+				</div>
+									
+				<!-- destaques -->
+				
+				<div class="mt-5">
+					<!-- Coluna Esquerda: Categorias -->
+					<div class="col-6 ">
+						<a href="#">
+						<div class="titulo-categoria d-flex justify-content-center align-items-center" style="margin-left: -100px;">
+							<h3>Explore por categoria </h3>
+							<i class="bi bi-chevron-double-right fs-3 ms-2 mb-1"></i>
+						</div>
+						</a>
+						<div class="d-flex justify-content-around ms-5" style="gap: 20px;">
+							<!-- Linha 1 -->
+							<div class="col-4 text-center">
+								<div class="card-cont ">
+									<div class="card-cat top1">
+										<img src="imagens/topico1.png" class="icon-cat" alt="Tecnologia">
+										<p class="label-cat" style="color: rgb(54, 89, 155);">Técnologia</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 text-center">
+								<div class="card-cont">
+									<div class="card-cat top2">
+										<img src="imagens/topico2.png" class="icon-cat" alt="Marketing">
+										<p class="label-cat text-success">Marketing</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 text-center">
+								<div class="card-cont">
+									<div class="card-cat top3">
+										<img src="imagens/topico3.png" class="icon-cat" alt="Design">
+										<p class="label-cat text-warning">Design</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 text-center">
+								<div class="card-cont">
+									<div class="card-cat top4">
+										<img src="imagens/topico4.png" style="height: 65px;" class="icon-cat" alt="Show / música">
+										<p class="label-cat text-danger">Show / música</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 text-center">
+								<div class="card-cont">
+									<div class="card-cat top5">
+										<img src="imagens/topico5.png" class="icon-cat" alt="Arte">
+										<p class="label-cat text-primary">Arte</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 text-center">
+								<div class="card-cont">
+									<div class="card-cat top6">
+										<img src="imagens/topico6.png" style="width: 80px;" class="icon-cat mt-2" alt="Presencial">
+										<p class="label-cat text-dark fw-bold">Público</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="col-6">
+							<a href="#">
+							<div class="titulo-categoria d-flex justify-content-center align-items-center">
+								<h3>Últimas noticias do ecosistema</h3>
+								<i class="bi bi-chevron-double-right fs-3 ms-2 mb-1"></i>
+							</div>
+							</a>
+							<div class="d-flex justify-content-around ms-5">
+								<div class="noticia me-3">
+									<a href="#">
+									<div class="d-flex justify-content-around" style="height: 375.5px; width: 550px;">
+										<div class="news-card-dest d-flex" style="background-image: url(imagens/noticia1.webp);">
+										<div class="news-desc-dest" style="height: fit-content;">
+											<h3>Nova startup recebe investimento</h3>
+											<p>O ecossistema de inovação de Uberlândia comemora a captação de R$ 2 milhões por uma startup de IA...</p>
+										</div>
+										</div>
+									</div>
+									</a>
+								</div>
+								<div class="subnoticia">
+									<div class="d-flex justify-content-around">
+										<a href="#">
+										<div class="d-flex justify-content-around" >
+											<div class="news-card-dest news-sub d-flex" style="background-image: url(imagens/noticia2_1.webp);">
+												<div class="news-sub-dest" style="height: fit-content;">
+													<h3>Hackathon impulsiona soluções urbanas</h3>
+													<p>Uberlândia sediou um hackathon de sucesso que reuniu desenvolvedores, designers e especialistas...</p>
+												</div>
+											</div>
+										</div>
+										</a>
+										<a href="#">
+										<div class="d-flex justify-content-around ms-3" >
+											<div class="news-card-dest news-sub d-flex" style="background-image: url(imagens/noticia3.jpg);">
+												<div class="news-sub-dest" style="height: fit-content;">
+													<h3>Uberlândia se Consolida como Polo de Inovação e IA no Brasil</h3>
+													<p>Ótimas notícias! O ecossistema de inovação em Uberlândia está aquecido, ..</p>
+												</div>
+											</div>
+										</div>
+										</a>
+									</div>
+									<div class="d-flex justify-content-around mt-3">
+										<a href="#">
+										<div class="d-flex justify-content-around" >
+											<div class="news-card-dest news-sub d-flex" style="background-image: url(imagens/noticia4.jpg);">
+												<div class="news-sub-dest" style="height: fit-content;">
+													<h3>Educação e Parcerias Impulsionam Inovação em Uberlândia</h3>
+													<p>Uberlândia não se destaca apenas pelos grandes investimentos e eventos, mas... </p>
+												</div>
+											</div>
+										</div>
+										</a>
+										<a href="#">
+										<div class="d-flex justify-content-around ms-3" >
+											<div class="news-card-dest news-sub d-flex" style="background-image: url(imagens/noticia5.jpg)";>
+												<div class="news-sub-dest" style="height: fit-content;">
+													<h3>Uberlândia Lidera em Sustentabilidade e Energia Renovável</h3>
+													<p>Uberlândia está avançando significativamente em sua jornada pel... </p>
+												</div>
+											</div>
+										</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+							<div class="titulo-categoria d-flex justify-content-center align-items-center mt-5" style="margin-left: -750px;">
+								<h3>Vagas Recomendadas</h3>
+								<i class="bi bi-chevron-double-right fs-3 mb-1"></i>
+							</div>
+						</a>
+					<div class="container" style="width: 100%;">
+						
+						<div class="swiper mySwiperVagas" style="margin-left: 20px; width: 1370px;">
+							<div class="swiper-wrapper wrapper-vagas ms-3">
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres1.jpg'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Analista de dados</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">Innova Tech · Tecnologia</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>CLT</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Integral</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Pleno</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px; box-shadow: 0 0 10px #6c3cd4;">Patrocinador</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Tecnologia</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Pleno</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres6.jpg'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Agente de Viagens</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">Aerosul · Aviação</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Híbrido</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>PJ</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Integral</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Pleno</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Híbrido</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Pleno</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Aviação</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres4.png'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Assistente adminstrativo</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">QUANTIX· Tecnologia</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>CLT</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Integral</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Pleno</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px; box-shadow: 0 0 10px #6c3cd4;">Novo</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Gestão</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Pleno</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres3.jpg'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">UI/UX Design</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">ZYNTEK · Tecnologia</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Estágio</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Parcial</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>-</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Estágio</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Presencial</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Design</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres2.jpg'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Cientista de Dados</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">NEURAL cover · Tecnologia</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Remoto</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>CLT</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Flexível</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Sênior</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Tecnologia</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Sênior</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">CLT</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-vagas">
+									<div class="card p-4 rounded" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+										<div class="d-flex align-items-center mb-3">
+											<div style="width: 50px; height: 50px; background-image: url('imagens/logo_empres8.jpg'); background-size: cover; background-position: center; border-radius: 50%; border: 1px solid #ccc;"></div>
+											<div class="ms-3">
+											<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Enfermeiro(a)</p>
+											<p class="m-0" style="font-size: 15px; color: gray;">Centro Saúde · Saúde</p>
+											</div>
+										</div>
+
+										<div class="text-center">
+											<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+											<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+											<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>CLT</p>
+											<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Plantão</p>
+											<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Pleno</p>
+											</div>
+
+											<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Saúde</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">Pleno</span>
+											<span class="tag" style="font-size: 13px; padding: 6px 12px;">CLT</span>
+											</div>
+
+											<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+											Ver mais
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+								<div class="swiper-button-prev swiper-button-prev-cards"></div>
+								<div class="swiper-button-next swiper-button-next-cards"></div>
+						</div>	
+					</div>
+				</div>	
+			</div>
+			<br>
+		<br>
+		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+		</footer>				
+		</main>
+		<!-- JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const swiperPrincipal = new Swiper(".mySwiper", {
+				slidesPerView: 1.70,
+				centeredSlides: true,
+				spaceBetween: 40,
+				loop: true,
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				});
+
+				const swiperVagas = new Swiper(".mySwiperVagas", {
+				slidesPerView: 4,
+				spaceBetween: 20,
+				loop: true,
+				navigation: {
+					nextEl: ".swiper-button-next-cards",
+					prevEl: ".swiper-button-prev-cards",
+				},
+				breakpoints: {
+					992: { slidesPerView: 3 },
+					768: { slidesPerView: 2 },
+					480: { slidesPerView: 1 }
+				}
+				});
+
+
+				function animarScaleSequencial() {
+					const cards = document.querySelectorAll('.card-cont');
+					let delay = 0;
+					cards.forEach((card) => {
+						setTimeout(() => {
+							card.style.transform = "scale(1.05)";
+							setTimeout(() => {
+								card.style.transform = "scale(1)";
+							}, 400);
+						}, delay);
+						delay += 500;
+					});
+				}
+				setInterval(animarScaleSequencial, 3000);
+
+				const input = document.querySelector('.input-busca');
+				const texto = "Buscar eventos, vagas, notícias...";
+				let i = 0;
+				function digita() {
+					if (i < texto.length) {
+						input.setAttribute("placeholder", input.getAttribute("placeholder") + texto[i]);
+						i++;
+						setTimeout(digita, 50);
+					}
+				}
+				setTimeout(digita, 1000);
+			});
+
+		</script>
+
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  	</body>
+</html>	
+
+
+<!-- 
+
+⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆
+⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠁⠸⣼⡿
+⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉⠀⠀⠀⠀⠀
+⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇⠀⠀⠀Ogros são como códigos...
+⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀têm camadas, são difíceis 
+⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀de entender, fazem muita gente ⠀⠀
+⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀chorar...⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
+-->

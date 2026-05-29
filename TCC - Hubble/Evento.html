@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evento</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
+	<!--ESTILO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="estilo_evento.css">
+	<!--JS-->
+	<script></script>
+	</head>
+  	<body>
+		
+		<main>
+			<div class="fundo popp-font-2">
+				<div class="d-flex" >
+					<div class="conteudo">
+						<a href="Hub.html">
+						<div class="voltar d-flex justify-content-center" style="width: 300px;">
+							<i class="bi bi-arrow-left pe-1"></i><p>voltar</p>
+						</div>
+						</a>
+						<div class="principal" style="width: 700px;">
+							<h1>Show Angra Maria</h1>
+							<div style="margin-right: 300px; margin-top: 30px;" >
+								<div class="d-flex justify-content-center" style="gap: 15px;">
+									<i class="bi bi-geo-alt-fill"></i><p>Centro de eventos de Uberlândia</p>
+								</div>
+								<div class="d-flex justify-content-center" style="gap: 15px;">
+									<i class="bi bi-calendar-check-fill"></i><p>12 a 27 de Junho</p>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center align-items-center" style="gap: 100px; padding-top: 0px;">
+							<div class="botao-dest">
+								<button>Comprar ingresso</button>
+							</div>
+							<div class="d-flex justify-content-around gostei">
+								<a href="#" id="likeBtn"><i class="bi bi-heart pe-3" style="font-size: 40px;"></i></a>
+								<p class="mt-2" id="likeCount">12K</p>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center compartilhe" style="gap: 50px; padding-top: 60px;">
+							<p class="pt-2">Compartilhe</p>
+
+							<!-- WhatsApp -->
+							<a href="https://api.whatsapp.com/send?text=https://seudominio.com" target="_blank">
+								<i class="bi bi-whatsapp"></i>
+							</a>
+
+							<!-- Facebook -->
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https://seudominio.com" target="_blank">
+								<i class="bi bi-facebook"></i>
+							</a>
+
+							<!-- Twitter (X) -->
+							<a href="https://twitter.com/intent/tweet?url=https://seudominio.com&text=Confira%20este%20evento!" target="_blank">
+								<i class="bi bi-twitter-x"></i>
+							</a>
+
+							<!-- Instagram (não tem compartilhamento direto via link) -->
+							<a href="https://www.instagram.com/" target="_blank">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</div>
+					</div>
+					<div class="container">
+						<div class="imagens">
+							<div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+							<div class="carousel-inner h-100">
+								<div class="carousel-item active">
+									<img src="imagens/show_angra.png" class="d-block" alt="Slide 1">
+								</div>
+								<div class="carousel-item">
+									<img src="imagens/imagem_show1.png" class="d-block" alt="Slide 2">
+								</div>
+								<div class="carousel-item">
+									<img src="imagens/imagem_show2.png" class="d-block" alt="Slide 3">
+								</div>
+								<div class="carousel-item">
+									<img src="imagens/imagem_show3.png" class="d-block" alt="Slide 3">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex popp-font-2" >
+			>
+				<div class="sobre" style="padding-top: 60px;">
+					<div class="card">
+						<h2>Descrição do evento</h2>
+						<div class="desc" id="descCompleta">
+							<h3>Show Angra Maria — A noite mais quente de Uberlândia está chegando!</h3>
+							<p>
+								Prepare-se para um espetáculo eletrizante que vai ficar marcado na história da cidade! O <strong>Show Angra Maria</strong> reúne grandes nomes da música alternativa, soul, percussão afro-brasileira e rap em uma noite inesquecível e <strong>open bar</strong>. Isso mesmo: cerveja, drinks e água liberados durante todo o evento!
+								<br><br>
+
+								<strong>LINE-UP IMPERDÍVEL:</strong><br><br>
+
+								<strong>Angra Maria</strong><br>
+								A estrela da noite! Dona de uma voz poderosa e presença de palco magnética, Angra Maria mistura soul, samba e poesia urbana em performances emocionantes. Suas letras falam de resistência feminina, ancestralidade e empoderamento — tudo isso com uma batida que faz o corpo vibrar.
+								<br><br>
+
+								<strong>Julio Ramos</strong><br>
+								Referência em percussão afro-brasileira, Julio Ramos traz uma batucada contagiante que incorpora maracatu, samba-reggae e ritmos tribais. Sua energia transforma o palco em um verdadeiro ritual coletivo de dança e celebração.
+								<br><br>
+
+								<strong>Marcos Teixeira</strong><br>
+								Ícone do R&B nacional, Marcos Teixeira traz sua voz suave e sedutora para embalar corações com letras profundas e grooves envolventes. Prepare-se para momentos de arrepiar com seus hits românticos e sua presença elegante.
+								<br><br>
+
+								<strong>Rapper P. Didão</strong><br>
+								Diretamente das quebradas criativas de Uberlândia, Rapper P. Didão é a mistura perfeita de crítica social, bom humor e beats pesadíssimos. Com seu flow afiado e carisma natural, Didão chega para levantar a galera com rimas que vão do protesto ao meme em segundos.
+								<br><br>
+
+								<strong>OPEN BAR liberado!</strong><br>
+								Inclui:
+								<ul>
+									<li>Cerveja artesanal</li>
+									<li>Gin tônica</li>
+									<li>Caipirinha</li>
+									<li>Água e refrigerante</li>
+								</ul>
+								<em>(Evite excessos. Beba com responsabilidade. Evento com fiscalização.)</em>
+								<br><br>
+
+								<strong>Local, Data e Hora</strong><br>
+								<strong>Local:</strong> Espaço Arena Central – Uberlândia, MG<br>
+								<strong>Data:</strong> 12 de outubro de 2025 (sábado)<br>
+								<strong>Horário:</strong> Portões abrem às 18h | Shows a partir das 20h<br>
+								<strong>Classificação:</strong> 18 anos<br>
+								<strong>Ingressos:</strong> R$ 80,00 (1º lote) – à venda no Sympla e pontos parceiros
+								<br><br>
+
+								<strong>Extras:</strong>
+								<ul>
+									<li>Área gourmet com food trucks variados</li>
+									<li>Lounge relax com sofás e espaço Instagramável</li>
+									<li>Brindes exclusivos para os 100 primeiros que chegarem</li>
+									<li>DJs locais nos intervalos dos shows</li>
+								</ul>
+								</p>
+						</div>
+						<div class="ver-mais-container">
+						<span class="ver-mais-btn" onclick="toggleDescricao()">VER MAIS ∇ </span>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<div class="card">
+						<div class="adicional">
+							<h3>Classificação</h3>
+							<p>
+							Classificação: 16 anos
+							Adolescentes entre 16 e 17 anos podem entrar desacompanhados, desde que apresentem documento oficial com foto.<br>
+							Menores de 16 anos não terão acesso ao evento, mesmo acompanhados dos pais ou respons<BR>
+
+							</p>
+
+							<h3>Apoio</h3>
+							<p>
+							Secretaria da Cultura<br>
+							de Uberlândia
+							</p>
+
+							<h3>Formas de Pagamento</h3>
+							<p>
+							Aceitamos os principais cartões de crédito:
+							</p>
+							<img src="imagens/cartoes.png" class="p-1" style="width: 400px;">
+							<p><strong>Até 10x no Cartão de Crédito</strong></p>
+							
+
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+
+			<div class="d-flex justify-content-around gap-5" >
+				<!-- Card Fornecedor -->
+				<div class="card card-fornecedor popp-font-2 shadow-custom">
+					<h3>Contato do Fornecedor</h3>
+					<div class="dados-fornecedor">
+					<p><strong>Empresa:</strong> Produções UberSom</p>
+					<p><strong>Responsável:</strong> Mariana Tavares</p>
+					<p><strong>E-mail:</strong> <a href="mailto:contato@ubersom.com.br">contato@ubersom.com.br</a></p>
+					<p><strong>Telefone:</strong> <a href="tel:+5534999999999">(34) 99999-9999</a></p>
+					<p><strong>Endereço:</strong> Av. Rondon Pacheco, 999 – Uberlândia, MG</p>
+					<p><strong>Instagram:</strong> <a href="https://instagram.com/ubersom" target="_blank">@ubersom</a></p>
+					</div>
+				</div>
+
+				<!-- Card Filtros -->
+				<div class="card-filtros popp-font-2" style="width: 600px ; border: none">
+					<h3>Filtros</h3>
+					<div class="filtros-tags">
+					<span class="tag">Show</span>
+					<span class="tag">Música</span>
+					<span class="tag">Rap</span>
+					<span class="tag">Pago</span>
+					<span class="tag">Ingressos Disponíveis</span>
+					<span class="tag">+16</span>
+					</div>
+				</div>
+			</div>
+				
+				<div class="participantes">
+					<h1 style="font-size: 35px;">Participantes</h1>
+					<center>
+					<div class="d-flex popp-font-2" style="gap: 50px; padding: 20px;" >
+						<div class="participante ms-5">
+							<div class="foto" style="  background-image: url('imagens/evento_dest_1.webp');"></div>
+							<p>Angra Maria </p>
+						</div>
+						<div class="participante">
+							<div class="foto" style="  background-image: url('imagens/participante1.png');"></div>
+							<p>Julio Ramos (Baterista)</p>
+						</div>
+						<div class="participante">
+							<div class="foto" style="  background-image: url('imagens/participante2.png');"></div>
+							<p>Marcos Teixeira</p>
+						</div>
+						<div class="participante">
+							<div class="foto" style="  background-image: url('imagens/participante3.png');"></div>
+							<p>Rapper P. Diddo</p>
+						</div>
+					</div>
+				</center>
+				</div>
+			</div>
+			<div class="menor" style="margin-top: -60px;">
+				<h2 style="padding: 30px;">Oportunidades Relacionadas</h2>
+				<div class="vagas d-flex justify-content-around" style="gap: -10px;">
+					
+					<!-- Operador de Som -->
+					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+						<div class="d-flex align-items-center mb-3">
+							<div class="ms-3">
+								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Operador de Som</p>
+								<p class="m-0" style="font-size: 15px; color: gray;">Evento Musical · Freelancer</p>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
+								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
+								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
+							</div>
+							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Áudio</span>
+							</div>
+							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+								Ver mais
+							</button>
+						</div>
+					</div>
+
+					<!-- Segurança -->
+					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+						<div class="d-flex align-items-center mb-3">
+							<div class="ms-3">
+								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Segurança</p>
+								<p class="m-0" style="font-size: 15px; color: gray;">Show ao Vivo · Freelancer</p>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
+								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
+								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
+							</div>
+							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Segurança</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
+							</div>
+							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+								Ver mais
+							</button>
+						</div>
+					</div>
+
+					<!-- Bartender -->
+					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+						<div class="d-flex align-items-center mb-3">
+							<div class="ms-3">
+								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Bartender</p>
+								<p class="m-0" style="font-size: 15px; color: gray;">Show Noturno · Freelancer</p>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
+								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
+								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
+							</div>
+							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Bartender</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
+							</div>
+							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+								Ver mais
+							</button>
+						</div>
+					</div>
+
+					<!-- Operador de Mesa de Luz -->
+					<div class="card-vaga p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+						<div class="d-flex align-items-center mb-3">
+							<div class="ms-3">
+								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Operador de Mesa de Luz</p>
+								<p class="m-0" style="font-size: 15px; color: gray;">Show de Música · Freelancer</p>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
+								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
+								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
+								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
+							</div>
+							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Iluminação</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
+								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Show</span>
+							</div>
+							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+								Ver mais
+							</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="local">
+				
+				<h2 style="padding: 30px;">Local do Evento</h2>
+
+				<div style="border-radius: 12px; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.5); max-width: 100%;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.4969909281463!2d-48.26292442388096!3d-18.90938350734225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445a26b0f9a29%3A0x3fb35e6e6e1fc26b!2sCenter%20Convention%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1753212239360!5m2!1spt-BR!2sbr" 
+					width="100%" 
+					height="250" 
+					style="border:0;" 
+					allowfullscreen="" 
+					loading="lazy" 
+					referrerpolicy="no-referrer-when-downgrade"
+					>
+					</iframe>
+
+				</div>
+
+			</div>
+			
+		
+		</main>
+		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
+			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+				
+				<!-- Sobre -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
+				  <p style="font-size: 14px; line-height: 1.6;">
+					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+				  </p>
+				</div>
+		  
+				<!-- Contato -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
+				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
+				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
+				</div>
+		  
+				<!-- Redes Sociais -->
+				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+				  </a>
+				  <a class="zoom">
+					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+				  </a>
+				</div>
+			  </div>
+			  
+			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
+			  
+			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
+			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+		<!-- JS -->
+
+	 <script>
+      function toggleDescricao() {
+        const desc = document.getElementById("descCompleta");
+        const btn = document.querySelector(".ver-mais-btn");
+
+        desc.classList.toggle("expandida");
+        btn.innerHTML = desc.classList.contains("expandida") ? "VER MENOS ▲" : "VER MAIS ∇ ";
+      }
+
+	   const likeBtn = document.getElementById("likeBtn");
+		const icon = likeBtn.querySelector("i");
+
+		likeBtn.addEventListener("click", function (e) {
+			e.preventDefault(); // evita redirecionamento
+
+			icon.classList.toggle("bi-heart");
+			icon.classList.toggle("bi-heart-fill");
+			icon.classList.toggle("clicked");
+
+			// Animação "pulse"
+			icon.style.transform = "scale(1.3)";
+			setTimeout(() => icon.style.transform = "scale(1)", 150);
+		});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  	</body>
+</html>
+
