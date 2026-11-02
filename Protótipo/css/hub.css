@@ -401,15 +401,6 @@ select:focus {
   right: -400px;
 }
 
-@media (max-width: 768px) {
-
-  .slide-princip {
-    width: 260px;
-    height: 160px;
-    font-size: 16px;
-  }
-}
-
 .slide-princip {
   position: relative;
   overflow: hidden;
@@ -636,4 +627,356 @@ select:focus {
 
 .tag:hover {
   transform: scale(1.05);
+}
+
+/* ======================== BUSCA ======================== */
+.busca {
+  gap: 12px;
+}
+
+.icone-busca {
+  width: 50px;
+}
+
+.hub-conteudo {
+  width: 70%;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/* ======================== CATEGORIAS ======================== */
+.titulo-categoria--categorias {
+  margin-left: -100px;
+}
+
+.titulo-categoria--vagas {
+  margin-left: -750px;
+}
+
+.icon-cat--show {
+  height: 65px;
+}
+
+.icon-cat--publico {
+  width: 80px;
+}
+
+.label-cat--tecnologia {
+  color: rgb(54, 89, 155);
+}
+
+/* ======================== NOTÍCIAS ======================== */
+.noticia-destaque {
+  height: 375.5px;
+  width: 550px;
+}
+
+.news-desc-dest,
+.news-sub-dest {
+  height: fit-content;
+}
+
+/* ======================== MENU DO PERFIL ======================== */
+.menu-perfil__item {
+  padding: 10px;
+}
+
+.menu-perfil__divisor {
+  padding-top: 10px;
+}
+
+/* ======================== VAGAS ======================== */
+.swiper-vagas {
+  margin-left: 20px;
+  width: 1370px;
+}
+
+.vaga-card,
+.vaga-card:hover {
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+.vaga-card__logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.vaga-card__cargo {
+  font-size: 22px;
+  color: #1e1e1e;
+}
+
+.vaga-card__empresa {
+  font-size: 15px;
+  color: gray;
+}
+
+.vaga-card__infos {
+  font-size: 15px;
+  color: #444;
+}
+
+.vaga-card__botao,
+.vaga-card__botao:hover {
+  background-color: #6c3cd4;
+  color: white;
+}
+
+.vaga-card__botao {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.tag--vaga {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.tag--destaque {
+  box-shadow: 0 0 10px #6c3cd4;
+}
+
+/* ======================== RESPONSIVO ======================== */
+/* O layout original (margens negativas, larguras fixas em px) só cabe em telas
+   a partir de ~1600px. Abaixo disso o conteúdo vazava para a direita, então
+   o menu lateral vira uma barra horizontal e o conteúdo fica fluido. */
+@media (max-width: 1599.98px) {
+  .nav-2 {
+    position: static;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .nav-bar-perfil,
+  .nav-bar-topicos {
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    max-width: none;
+  }
+
+  .nav-bar-topicos {
+    flex: 1;
+    background: none;
+    overflow-x: auto;
+  }
+
+  .nav-bar-topicos .menu {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .li-menu,
+  .li-menu-ativado {
+    width: auto;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .menu a {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .menu a i {
+    font-size: 1.5rem !important;
+    padding: 0 !important;
+  }
+
+  .foto {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hub-conteudo {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .hub-conteudo > .d-flex,
+  .hub-conteudo .ms-5 {
+    margin-left: 0 !important;
+  }
+
+  .hub-conteudo .col-6 {
+    width: 100%;
+  }
+
+  .titulo-categoria--categorias,
+  .titulo-categoria--vagas {
+    margin-left: 0;
+  }
+
+  .titulo-categoria {
+    justify-content: flex-start !important;
+    font-size: 24px;
+  }
+
+  /* Botões de filtro e categorias quebram linha */
+  .hub-conteudo .gap-20 {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .hub-conteudo .btn {
+    width: auto;
+    min-width: 140px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .card-cont {
+    width: 140px;
+  }
+
+  .hub-conteudo .col-4 {
+    width: auto;
+  }
+
+  /* Notícias empilhadas */
+  .noticia + .subnoticia,
+  .hub-conteudo .noticia {
+    margin: 0 !important;
+  }
+
+  .hub-conteudo .noticia ~ .subnoticia {
+    margin-top: 16px;
+  }
+
+  .hub-conteudo .container .d-flex.ms-5 {
+    flex-direction: column;
+  }
+
+  .noticia-destaque {
+    width: 100%;
+    height: 300px;
+  }
+
+  .news-desc-dest {
+    width: auto;
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .subnoticia > .d-flex {
+    gap: 16px;
+  }
+
+  .subnoticia .ms-3 {
+    margin-left: 0 !important;
+  }
+
+  .subnoticia a {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .news-sub {
+    width: 100%;
+  }
+
+  .news-sub-dest {
+    width: auto;
+    right: 10px;
+  }
+
+  /* Carrossel de vagas */
+  .swiper-vagas {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .vaga-card,
+  .vaga-card:hover {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .swiper-button-prev-cards {
+    left: 0;
+  }
+
+  .swiper-button-next-cards {
+    right: 0;
+  }
+
+  /* Carrossel de destaques */
+  .swiper-button-prev {
+    left: 8px;
+  }
+
+  .swiper-button-next {
+    right: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slide-princip {
+    width: 260px;
+    height: 160px;
+    font-size: 16px;
+  }
+
+  .mySwiper {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .mySwiper .swiper-slide-active {
+    transform: scale(1.3);
+  }
+
+  .mySwiper .swiper-slide-active:hover {
+    transform: scale(1.35);
+  }
+
+  .conteudo-overlay {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+  }
+
+  .fundo-princip {
+    height: auto;
+    padding-bottom: 1px;
+  }
+
+  .subnoticia > .d-flex {
+    flex-direction: column;
+  }
+
+  .busca p {
+    margin: 0;
+  }
+
+  .busca .input-busca {
+    margin-bottom: 0 !important;
+  }
+
+  .icone-busca {
+    width: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .titulo-categoria h3 {
+    text-align: left;
+  }
 }
