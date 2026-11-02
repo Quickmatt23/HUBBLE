@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,109 +30,109 @@
 			</nav>
 		</header>
 		<main>
-			<div class="row d-flex justify-content-center" style="width: 100%;">
+			<div class="row auth-linha d-flex justify-content-center w-100">
 				<div class="col">
-					<div class="d-flex align-items-center" style="margin-left: 160px; margin-top: 410px;">
+					<div class="d-flex align-items-center marca-grande">
 						<img src="imagens/logo.png" class="ms-5" alt="Logo da Hubble" width="200px">
-						<h1 class="mol-font m-0 text-white ms-2" style="font-size: 100px">HUBBLE</h1>
+						<h1 class="mol-font m-0 text-white ms-2 marca-grande__nome">HUBBLE</h1>
 					</div> 
 				</div>
 				<div class="col">
-					<div class="d-flex popp-font-2 d-flex justify-content-center" style="background-color: #1a1a1a; width: 102.7%; min-height: 100vh; padding: 74px 20px 74px 20px;">						
+					<div class="d-flex popp-font-2 d-flex justify-content-center painel-auth">						
 						<div>
-							<center>
+							<div class="text-center">
 							<div class="d-flex justify-content-start align-items-center pt-3">
 								<a class="voltar" href="cadastro.html">
 									<img src="imagens/icone-voltar.png" alt="icone voltar" height="23px">
-									<span class="popp-font-2 ms-2" style="color: white; font-size: 20px;">Voltar</span>
+									<span class="popp-font-2 ms-2 voltar__texto">Voltar</span>
 								</a>
 							</div>
 							<img src="imagens/icone_login.png" class="mt-5" alt=" imagem de networking" height="200px">
-							<h2 class="text-white " style="font-size: 46px; font-weight: 500;">Criação de conta <b>Empresa</b></h2>
-							<p style="text-align: justify; color: white; width: 500px;" class="popp-font-2 fs-5" ><b class="text-white">Estamos muito felizes em ser seu parceiro!</b><br>
+							<h2 class="text-white titulo-auth fw-medium">Criação de conta <b>Empresa</b></h2>
+							<p class="popp-font-2 fs-5 texto-boas-vindas" ><b class="text-white">Estamos muito felizes em ser seu parceiro!</b><br>
 								Seja bem-vindo(a) à família Hubble. Juntos vamos alcançar grandes resultados!"</p>
-							</center>
+							</div>
 							<br>
 							<form method="POST" action="php/cadastro-empresa.php">
 
 								<!-- Etapa 1 -->
 								<div class="etapa" id="etapa1">
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 18px;">Razão Social</label><br>
+										<label class="label-control">Razão Social</label><br>
 										<input type="text" name="razao_social" class="form popp-font-2 mt-2" maxlength="80" placeholder="Razão Social da empresa" required>
 									</div>
 									<br>
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 18px;">Nome Fantasia</label><br>
+										<label class="label-control">Nome Fantasia</label><br>
 										<input type="text" name="nome_fantasia" class="form popp-font-2 mt-2" maxlength="25" maxplaceholder="Nome Fantasia da empresa" required placeholder="Nome da empresa">
 									</div>
 									<br>
-									<center>
+									<div class="text-center">
 										<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="proximaEtapa(1)">Próximo</button>
-									</center>
+									</div>
 								</div>
 							
 								<!-- Etapa 2 -->
 								<div class="etapa" id="etapa2" style="display: none;">
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 18px;">CNPJ</label><br>
+										<label class="label-control">CNPJ</label><br>
 										<input type="text" name="cnpj" class="form popp-font-2 mt-2" maxlength="18" placeholder="00.000.000/0001-00" required>
 									</div>
 									<br>
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 18px;">E-mail Corporativo</label><br>
+										<label class="label-control">E-mail Corporativo</label><br>
 										<input type="email" maxlength="100" name="email" class="form popp-font-2 mt-2" placeholder="empresa@exemplo.com.br" required>
 									</div>
 									<br>
-									<center>
+									<div class="text-center">
 										<div class="d-flex justify-content-around">
 											<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="voltarEtapa(2)">Voltar</button>
 											<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="proximaEtapa(2)">Próximo</button>
 										</div>
-									</center>
+									</div>
 								</div>
 							
 								<!-- Etapa 3 -->
 								<div class="etapa" id="etapa3" style="display: none;">
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 20px;">Senha</label><br>
+										<label class="label-control voltar__texto">Senha</label><br>
 										<input type="password" maxlength="255" name="senha" id="senha1" class="form popp-font-2 mt-2" placeholder="Digite sua senha" required oninput="testesenha()">
 									</div>
 									<br>
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 20px;">Confirmar Senha</label><br>
+										<label class="label-control voltar__texto">Confirmar Senha</label><br>
 										<input type="password" name="confirmar_senha" maxlength="255" id="senha2" class="form popp-font-2 mt-2" placeholder="Confirme sua senha" required oninput="testesenha()">
 									</div>
 									<br>
 									<div id="erroSenha"></div>
-									<center>
+									<div class="text-center">
 										<div class="d-flex justify-content-around">
 											<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="voltarEtapa(3)">Voltar</button>
 											<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="proximaEtapa(3)">Próximo</button>
 										</div>
-									</center>
+									</div>
 								</div>
 							
 								<!-- Etapa 4 -->
 								<div class="etapa" id="etapa4" style="display: none;">
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 20px;">Telefone Comercial</label><br>
+										<label class="label-control voltar__texto">Telefone Comercial</label><br>
 										<input type="text" maxlength="20" name="telefone" class="form popp-font-2 mt-2" placeholder="(00) 0000-0000" required>
 									</div>
 									<br>
 									<div>
-										<label class="label-control" style="color: #ffffff; font-size: 20px;">Endereço Completo</label><br>
+										<label class="label-control voltar__texto">Endereço Completo</label><br>
 										<input type="text" maxlength="255" name="endereco" class="form popp-font-2 mt-2" placeholder="Rua, número, bairro, cidade, UF, CEP" required>
 									</div>
 									<br>
-									<center>
+									<div class="text-center">
 										<div class="d-flex justify-content-around">
 											<button type="button" class="btn btn-lg popp-font button-login btn-dark mt-5" onclick="voltarEtapa(4)">Voltar</button>
 											<div id="finalizar">
-												<a href="completo_cadastro_empresa.html" class="btn btn-lg popp-font button-login btn-dark mt-5" style="text-decoration: none;">Finalizar Cadastro</a>
+												<a href="completo_cadastro_empresa.html" class="btn btn-lg popp-font button-login btn-dark mt-5 text-decoration-none">Finalizar Cadastro</a>
 											</div>
 										</div>
-									</center>
+									</div>
 								</div>
 							
 							</form>							
@@ -166,7 +166,7 @@
 				let senha2 = document.getElementById("senha2").value;
 
 				if (senha1 != senha2 ) {
-					html = `<p href="#" style="color: #ec5e5e; text-decoration: none; font-size: 23px">Senhas Diferentes!</p>`;
+					html = `<p class="erro-senha" href="#">Senhas Diferentes!</p>`;
 					document.getElementById("erro2").innerHTML = html;
 					document.getElementById('finalizar').style.display = 'none';
 				}else{

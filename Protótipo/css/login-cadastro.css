@@ -1,7 +1,18 @@
+/* =====================================================================
+   HUBBLE — LOGIN E CADASTRO
+   Login.html, cadastro.html, cadastro_cliente.html, cadastro_empresa.html,
+   completo_cadastro_usuario.html, completo_cadastro_empresa.html
+   ===================================================================== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../imagens/fundo-3_1.webp"); /* Mantenha aqui */
+  background-image: url("../imagens/fundo-3_1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,23 +20,117 @@ body {
   overflow: hidden;
 }
 
-.button-login {
-  border: none;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-  background-color: #6a2fdf;
-  border-color: #5e17eb;
+/* Telas de "cadastro concluído" usam Poppins no corpo todo */
+.pagina-sucesso {
+  font-family: font4;
+}
+
+/* O conteúdo sobe por baixo do header (65px) */
+main {
+  margin-top: -65px;
+  position: relative;
+  z-index: 1;
+}
+
+b {
+  color: #ec5e5e;
+}
+
+/* ======================== HEADER ======================== */
+.a-1 {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.ativo {
+  color: #f75757 !important;
+  font-weight: 500;
+}
+
+/* ======================== LAYOUT ======================== */
+/* Logo grande ao lado do formulário */
+.marca-grande {
+  margin-left: 160px;
+  margin-top: 410px;
+}
+
+.marca-grande__nome {
+  font-size: 100px;
+}
+
+/* Painel escuro do formulário */
+.bg-painel {
+  background-color: #1a1a1a;
+}
+
+.painel-login {
+  background-color: #1a1a1a;
+  width: 900px;
+  padding: 74px 20px 100%;
+}
+
+.painel-auth {
+  background-color: #1a1a1a;
+  width: 102.7%;
+  min-height: 100vh;
+  padding: 74px 20px;
+}
+
+/* cadastro.html: coluna da esquerda com imagem de fundo */
+.coluna-marca {
+  background-image: url("../imagens/fundo-3_1.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.escolha-cadastro {
+  max-width: 520px;
+  width: 90%;
+}
+
+/* ======================== TEXTOS ======================== */
+.titulo-auth {
+  font-size: 46px;
+}
+
+.texto-conta {
+  font-size: 17px;
+}
+
+.link-rosa {
+  color: #ff66c4;
+  text-decoration: underline;
+}
+
+.texto-boas-vindas {
+  text-align: justify;
+  color: white;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texto-boas-vindas--grande {
+  font-size: 25px;
+}
+
+.label-control {
   color: #ffffff;
+  font-size: 18px;
 }
 
-.button-login:hover {
-  background-color: #6a2fdf;
-  color: rgb(255, 255, 255);
+.esquec-senha {
+  color: #ff66c4;
+  text-decoration: none;
+  font-size: 13px;
 }
 
+.esquec-senha:hover {
+  text-decoration: underline;
+}
+
+/* ======================== FORMULÁRIO ======================== */
 input[type="text"],
 input[type="email"],
 select,
@@ -46,30 +151,78 @@ select:focus {
 }
 
 .form {
-      background-color: #545454;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      height: 40px;
-      color: white;
-      
-    }
-
-main {
-  margin-top: -65px; /* Ajuste este valor para a altura exata do seu cabeçalho (65px) */
-  position: relative; /* Também essencial para o z-index */
-  z-index: 1; /* Garante que o conteúdo principal fique abaixo do cabeçalho */
+  background-color: #2a2a2a;
+  margin: 0 auto;
+  border: 1px solid #444;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  color: #fff;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+.form:focus {
+  border-color: #9059ff;
+  outline: none;
+  box-shadow: 0 0 0 2px #9059ff60;
 }
 
+.required,
+.span-required {
+  font-size: medium;
+}
+
+/* Mensagens de validação (exibidas via JS) */
+.span-required {
+  color: #cc1919;
+  display: none;
+}
+
+.span-required--largo {
+  width: 500px;
+  text-align: justify;
+}
+
+.erro-senha {
+  color: #ec5e5e;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+/* ======================== BOTÕES ======================== */
+.button-login {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+  background-color: #6a2fdf;
+  color: #fff;
+}
+
+.button-login:hover {
+  background-color: #9059ff;
+  color: #fff;
+}
+
+.voltar {
+  transition-duration: 0.20s;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  transform: scale(1.20);
+}
+
+.voltar__texto {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* cadastro.html: cartões "Cadastrar como Cliente / Empresa" */
 .botao {
-  background-size: cover;
-  background-position: center;
   height: 220px;
   display: flex;
   justify-content: center;
@@ -79,10 +232,12 @@ html, body {
   color: #ffffff;
   transition: all 0.4s ease;
   background-color: #6f5a9a;
-  border: 3px solid #bfa8ff80;
-  box-shadow: 0 4px 16px rgba(191, 168, 255, 0.25); 
-  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  border: 3px solid #bfa8ff80;
+  box-shadow: 0 4px 16px rgba(191, 168, 255, 0.25);
 }
 
 .botao:hover {
@@ -91,74 +246,87 @@ html, body {
   text-shadow: -1px 2px 1px #f08dcf;
 }
 
-b {
-  color: #ec5e5e;
-}
-
-.voltar{
-  transition-duration: 0.20s;
-  text-decoration: none;
-}
-
-.voltar:hover{
-  transform: scale(1.20);
-}
-
-.required ,
-.span-required {
-  font-size: medium; 
-}
-
-.span-required {
-  color: #cc1919; 
-  display: none;
-}
-
-a[href*="cadastro_cliente"] .botao {
+.botao--cliente {
   background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("../imagens/cadastro-pessoa.png");
 }
 
-a[href*="cadastro_empresa"] .botao {
+.botao--empresa {
   background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("../imagens/cadastro-empresa.png");
 }
 
-/* Pagina Login */
+/* ======================== RESPONSIVO ======================== */
+@media (max-width: 991.98px) {
+  /* Permite rolar a página e tira o "encaixe" por baixo do header */
+  body {
+    overflow: auto;
+  }
 
-.a-1 {
-		color: #ccc;
-		transition: color 0.3s ease;
-	  }
+  main {
+    margin-top: 0;
+  }
 
-	  .ativo {
-		color: #f75757 !important;
-		font-weight: 500;
-	  }
-	  .form {
-		background-color: #2a2a2a;
-		border: 1px solid #444;
-		border-radius: 6px;
-		color: #fff;
-		padding: 8px 12px;
-		width: 100%;
-	  }
-	  .form:focus {
-		border-color: #9059ff;
-		outline: none;
-		box-shadow: 0 0 0 2px #9059ff60;
-	  }
-	  .button-login {
-		background-color: #6a2fdf;
-		color: #fff;
-		border: none;
-		transition: background-color 0.3s ease;
-	  }
-	  .button-login:hover {
-		background-color: #9059ff;
-	  }
-	  .esquec-senha {
-		color: #ff66c4;
-		text-decoration: none;
-	  }
-	  .esquec-senha:hover {
-		text-decoration: underline;
-	  }
+  .auth-linha {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  /* Logo sempre em cima do formulário */
+  .auth-linha > .col:has(.marca-grande) {
+    order: -1;
+  }
+
+  .auth-linha > .col {
+    padding: 0;
+  }
+
+  .marca-grande {
+    margin: 2rem 0;
+    justify-content: center;
+  }
+
+  .marca-grande img {
+    width: 80px;
+    margin-left: 0 !important;
+  }
+
+  .marca-grande__nome {
+    font-size: 48px;
+  }
+
+  .painel-login,
+  .painel-auth {
+    width: 100%;
+    min-height: 0;
+    padding: 32px 16px !important;
+  }
+
+  .painel-login > div,
+  .painel-auth > div {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .painel-login img,
+  .painel-auth img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .titulo-auth {
+    font-size: 32px;
+  }
+
+  .texto-boas-vindas,
+  .span-required--largo {
+    width: auto;
+    max-width: 500px;
+  }
+
+  .coluna-marca {
+    min-height: 40vh;
+  }
+
+  .coluna-marca img {
+    width: 120px;
+  }
+}
