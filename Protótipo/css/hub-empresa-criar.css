@@ -1,0 +1,243 @@
+/*================== Banner ======================*/
+
+.button-imagem {
+  display: flex; /* Para centralizar com Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 20px;
+  border: none;
+  width: 200px;
+  height: 45px;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background-size: 200% 200%; /* Para animar o gradiente */
+  background-position: left;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+
+.button-imagem:hover {
+  color: white;
+  background: #7b3fe4;
+  background-size: 200% 200%;
+  background-position: right;
+  transition: background-position 0.3s ease, transform 0.3s ease;
+  transform: scale(1.01);
+  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.button-imagem:active {
+  transform: scale(1);
+  color: white;
+}
+
+.imagem-botao-ir {
+  margin-left: 20px;
+  width: 20px;
+  height: 27px;
+  background-image: url('../imagens/voltar-icon-dark.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-ir {
+  background-image: url('../imagens/voltar-icon-claro.png');
+}
+
+.imagem-botao-voltar {
+  margin-left: 20px;
+  width: 20px;
+  height: 27px;
+  background-image: url('../imagens/voltar-icon-dark2.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-voltar {
+  background-image: url('../imagens/voltar-icon-claro2.png');
+}
+
+.imagem-botao-fim {
+  margin-left: 20px;
+  width: 25px;
+  height: 20px;
+  background-image: url('../imagens/icon-proximo-escuro.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.button-imagem:hover .imagem-botao-fim {
+  background-image: url('../imagens/icon-proximo-claro.png');
+}
+
+/*============================ PASSOS ==================*/
+
+.timeline {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: font4;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.number {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #331b3b;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.247);
+}
+
+.step.active .number{
+  background-color: #7b3fe4;
+  color: white;
+  width: 43px;
+  height: 43px;
+}
+
+.label {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #331b3b;
+  font-weight: 600;
+}
+
+.label.active {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #7b3fe4;
+  font-weight: 350;
+}
+
+/* ========================= */
+.voltar {
+  font-size: 20px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: #1a1a1a;
+  display: flex; /* alinha imagem e texto */
+  align-items: center;
+  gap: 8px;
+  transition: 0.4s; /* transição no texto */
+}
+
+.voltar-imagem {
+  width: 20px;
+  height: 20px;
+  background-image: url('../imagens/voltar-icon-dark2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.4s; /* transição na imagem */
+}
+
+/* Quando hover no link, aumenta texto e imagem */
+.voltar:hover {
+  font-size: 25px;
+}
+
+.voltar:hover .voltar-imagem {
+  width: 30px;
+  height: 30px;
+}
+
+.formulario{
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.781); 
+  padding: 21px;
+}
+
+textarea{
+  height: 200px;
+  max-height: 200px;
+}
+
+textarea.textarea2{
+  height: 100px;
+  max-height: 100px;
+}
+
+.form-control{
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ======================== RESPONSIVO ======================== */
+/* Linha do tempo das etapas vira uma faixa horizontal acima do formulário */
+@media (max-width: 991.98px) {
+  .timeline {
+    width: 100%;
+    height: auto;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start !important;
+    gap: 8px 16px;
+    padding: 16px;
+  }
+
+  .timeline > .d-flex:first-child {
+    flex-basis: 100%;
+    justify-content: flex-start !important;
+  }
+
+  .voltar {
+    margin: 0 0 8px;
+  }
+
+  .step {
+    margin-bottom: 0;
+  }
+
+  /* No celular só o número aparece; o nome fica apenas na etapa atual */
+  .label {
+    font-size: 13px;
+    margin-left: 6px;
+  }
+
+  .step:not(.active) .label {
+    display: none;
+  }
+
+  .label.active {
+    font-size: 15px;
+  }
+
+  .formulario {
+    width: auto;
+    margin: 16px !important;
+    padding: 16px;
+  }
+
+  .formulario [style*="margin-top"] {
+    margin-top: 16px !important;
+  }
+
+  .button-imagem {
+    margin-top: 16px;
+  }
+}

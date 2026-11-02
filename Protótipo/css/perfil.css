@@ -1,48 +1,3 @@
-/* ======================== FONTES PERSONALIZADAS ======================== */
-/* Fonte 1: Poppins Bold */
-@font-face {
-  font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
-}
-
-/* Fonte 2: Molgan Regular */
-@font-face {
-  font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
-}
-
-/* Fonte 3: Intro-Rust */
-@font-face {
-  font-family: font3;
-  src: url('fontes/Rust-font/IntroRust.otf');
-}
-
-@font-face {
-  font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
-}
-
-/* Classe para aplicar a fonte Poppins */
-.popp-font {
-  font-family: font1;
-}
-
-.popp-font-2 {
-  font-family: font4;
-}
-/* Classe para aplicar a fonte Molgan + sombra preta */
-.mol-font {
-  font-family: font2;
-  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
-}
-
-/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
-.rust-font {
-  font-family: font3;
-  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
-}
-
-
 body {
   background-color: #f5f5f5;
   font-family: font4;
@@ -68,7 +23,7 @@ header {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-image: url('imagens/loos.jpg');
+  background-image: url('../imagens/loos.jpg');
   background-size: cover;
   background-position: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -102,6 +57,7 @@ header {
 
 .btn-custom:hover {
   background-color: #9059ff;
+  color: #fff;
   transform: scale(1.03);
 }
 
@@ -118,6 +74,7 @@ header {
 
 .btn-danger-custom:hover {
   background-color: #ff6b6b;
+  color: #fff;
   transform: scale(1.03);
 }
 
@@ -212,7 +169,7 @@ h2 {
   background-color: #f8f8f8;
 }
 
-.btn-primary, .btn-outline-primary {
+.btn-outline-primary {
   border-radius: 6px;
 }
 
@@ -230,4 +187,35 @@ th, td {
 .note {
   font-size: 0.9em;
   color: #666;
+}
+/* ======================== RESPONSIVO ======================== */
+@media (max-width: 767.98px) {
+  header {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .back-btn {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .container-section {
+    margin: 16px;
+  }
+
+  .panel {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }

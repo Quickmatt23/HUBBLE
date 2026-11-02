@@ -1,53 +1,9 @@
-/* ======================== FONTES PERSONALIZADAS ======================== */
-/* Fonte 1: Poppins Bold */
-@font-face {
-  font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
-}
-
-/* Fonte 2: Molgan Regular */
-@font-face {
-  font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
-}
-
-/* Fonte 3: Intro-Rust */
-@font-face {
-  font-family: font3;
-  src: url('fontes/Rust-font/IntroRust.otf');
-}
-
-@font-face {
-  font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
-}
-
-/* Classe para aplicar a fonte Poppins */
-.popp-font {
-  font-family: font1;
-}
-
-.popp-font-2 {
-  font-family: font4;
-}
-/* Classe para aplicar a fonte Molgan + sombra preta */
-.mol-font {
-  font-family: font2;
-  text-shadow: 2px 2px 4px #000; /* Sombra sutil para destaque */
-}
-
-/* Classe para aplicar a fonte Intro-Rust + sombra vermelha */
-.rust-font {
-  font-family: font3;
-  text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
-}
-
 a {
   text-decoration: none;
 }
 
 .fundo{
-  background-image: url("imagens/evento_dest.png"); /* Mantenha aqui */
+  background-image: url("../imagens/evento_dest.png"); /* Mantenha aqui */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +24,6 @@ a {
   width: 100%;
   height: 100%;
 }
-
 
 .voltar {
   font-size: 23px;
@@ -200,33 +155,15 @@ button:active {
   color: #444343;
 }
 
-
-.pub {
-
-  width: 600px;
-  height: 700px;
-  margin: 50px;
-}
-
 .adicional {
   text-align: center;
   padding: 50px;
-}
-
-.filtros {
-  width: 500px;
-  text-align: center;
 }
 
 .adicional h3 {
   padding: 10px;
   font-weight: 500;
 }
-
-.descricao-completa {
-    display: none;
-    transition: all 0.3s ease;
-  }
 
 .desc {
   overflow: hidden;
@@ -253,7 +190,6 @@ button:active {
   .ver-mais-btn:hover {
     text-decoration: underline;
   }
-
 
 .tag:hover {
   transform: scale(1.05);
@@ -295,8 +231,6 @@ button:active {
 .card-fornecedor h3 {
   padding: 10px;
 }
-
-
 
 .shadow-custom {
   background: #ffffff;
@@ -377,3 +311,251 @@ button:active {
   transform: scale(1.05);
 }
 
+
+/* ======================== CLASSES QUE ANTES ERAM style="" ======================== */
+.voltar--largura {
+  width: 300px;
+}
+
+.principal--largura {
+  width: 700px;
+}
+
+.principal__infos {
+  margin-right: 300px;
+  margin-top: 30px;
+}
+
+.info-linha {
+  gap: 15px;
+}
+
+.acoes {
+  gap: 100px;
+  padding-top: 0;
+}
+
+.gostei__icone {
+  font-size: 40px;
+}
+
+.compartilhe--espaco {
+  gap: 50px;
+  padding-top: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.cartoes {
+  width: 400px;
+}
+
+.card-filtros--sem-borda {
+  width: 600px;
+  border: none;
+}
+
+.participantes__titulo {
+  font-size: 35px;
+}
+
+.participantes__lista {
+  gap: 50px;
+  padding: 20px;
+  text-align: center; /* antes feito com <center> */
+}
+
+.participante .foto {
+  margin: 0 auto;
+}
+
+.menor--sobe {
+  margin-top: -60px;
+}
+
+.secao-titulo {
+  padding: 30px;
+}
+
+.mapa {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+
+/* ======================== RESPONSIVO ======================== */
+/* Abaixo de 1600px o carrossel de fotos (700px + margens de 100px) não cabe
+   ao lado do título: ele desce e as larguras fixas viram fluidas. */
+@media (max-width: 1599.98px) {
+  .fundo > .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .fundo .container {
+    max-width: none;
+  }
+
+  .imagens {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+  }
+
+  .detalhes > .sobre {
+    width: auto;
+    flex: 1 1 60%;
+    min-width: 0;
+  }
+
+  .detalhes > .info {
+    flex: 1 1 35%;
+  }
+
+  .vagas {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .vaga button {
+    width: 100%;
+  }
+
+  .card-fornecedor {
+    width: auto;
+    flex: 1;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .principal,
+  .principal--largura,
+  .voltar--largura {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .principal {
+    padding: 16px;
+  }
+
+  .principal h1 {
+    font-size: 36px;
+  }
+
+  .principal__infos {
+    margin-right: 0;
+  }
+
+  .acoes,
+  .compartilhe--espaco {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .acoes {
+    padding-top: 16px;
+  }
+
+  .compartilhe--espaco {
+    padding-top: 32px;
+  }
+
+  .botao-dest button {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .imagens {
+    width: auto;
+    height: 240px;
+    margin: 24px 16px;
+  }
+
+  .fundo > .d-flex > * {
+    min-width: 0;
+    width: 100%;
+  }
+
+  /* Seções lado a lado viram coluna */
+  .detalhes,
+  .fundo ~ .d-flex.justify-content-around {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  .sobre,
+  .info {
+    margin: 16px;
+  }
+
+  .desc,
+  .adicional {
+    padding: 16px;
+  }
+
+  .cartoes {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .card-fornecedor,
+  .card-filtros,
+  .card-filtros--sem-borda {
+    width: auto;
+    min-height: 0;
+    margin: 16px;
+    padding: 24px 16px;
+  }
+
+  .participantes {
+    padding: 24px 16px;
+  }
+
+  .participantes__lista {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .participante {
+    margin: 0 !important;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .participante p {
+    font-size: 18px;
+  }
+
+  .foto {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .menor--sobe {
+    margin-top: 0;
+  }
+
+  .secao-titulo {
+    padding: 24px 16px;
+  }
+
+  .vagas {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .vaga {
+    margin: 16px;
+  }
+
+  .vaga button {
+    width: 100%;
+  }
+}

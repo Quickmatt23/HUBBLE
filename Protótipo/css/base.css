@@ -1,0 +1,226 @@
+/* =====================================================================
+   HUBBLE — BASE
+   Estilos compartilhados por TODAS as páginas.
+   Carregue este arquivo logo depois do Bootstrap e antes do CSS da página:
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/<pagina>.css">
+   ===================================================================== */
+
+/* ======================== FONTES ======================== */
+@font-face {
+  font-family: font1; /* Poppins Bold */
+  src: url('../fontes/Poppins-font/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: font2; /* Molgan Regular (logo) */
+  src: url('../fontes/molgan-font/MolganRegular-YqWj2.otf');
+}
+
+@font-face {
+  font-family: font3; /* Intro Rust (títulos) */
+  src: url('../fontes/Rust-font/IntroRust.otf');
+}
+
+@font-face {
+  font-family: font4; /* Poppins Medium */
+  src: url('../fontes/Poppins-font/Poppins-Medium.ttf');
+}
+
+/* ======================== UTILITÁRIOS DE FONTE ======================== */
+.popp-font {
+  font-family: font1;
+}
+
+.popp-font-2 {
+  font-family: font4;
+}
+
+/* Molgan + sombra preta */
+.mol-font {
+  font-family: font2;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Intro Rust + sombra vermelha */
+.rust-font {
+  font-family: font3;
+  text-shadow: -4px 3px 1px #f75757;
+}
+
+/* ======================== ÍCONE ZOOM ======================== */
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* ======================== LINKS DE NAVEGAÇÃO (header do site) ======================== */
+.a-1 {
+  position: relative;          /* referência para o ::after */
+  display: inline-block;
+  font-size: 10px;
+  color: #F4F4F4;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Linha animada embaixo do link */
+.a-1::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ec5e5e;
+  transition: width 0.3s ease-in-out;
+}
+
+.a-1:hover::after {
+  width: 100%;
+}
+
+/* Link da página atual */
+.ativo {
+  color: #ec5e5e;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+.ativo::after {
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+/* ======================== HEADER DO SITE ======================== */
+.e-header {
+  height: 65px;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(34, 24, 36, 0.95), rgba(34, 20, 39, 0.95));
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Variações de fundo do header */
+.e-header--translucido {
+  background: linear-gradient(135deg, rgba(34, 24, 36, 0.8), rgba(34, 20, 39, 0.8));
+}
+
+.e-header--solido {
+  background: #221824;
+}
+
+.a-1:hover {
+  color: #ec5e5e;
+  text-shadow: 2px 2px 4px #000;
+  text-decoration: none;
+}
+
+/* Botão "hambúrguer": só aparece em telas pequenas (ver seção RESPONSIVO) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  padding: 0 16px;
+}
+
+/* ======================== RODAPÉ DO SITE ======================== */
+.site-footer {
+  width: 100%;
+  background-color: #221824;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-footer__colunas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.site-footer__coluna {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.site-footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  font-size: 14px;
+}
+
+.site-footer__coluna p {
+  line-height: 1.6;
+}
+
+.site-footer__social {
+  color: #a74040;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.site-footer__social:last-child {
+  margin-right: 0;
+}
+
+.site-footer hr {
+  border: 0.5px solid #444;
+  margin: 20px 0;
+}
+
+/* ======================== RESPONSIVO ======================== */
+/* Tablets e celulares: header vira logo + botão de menu */
+@media (max-width: 991.98px) {
+  .e-header {
+    height: auto;
+    min-height: 65px;
+    flex-wrap: wrap;
+  }
+
+  .e-header > div:first-child img {
+    margin-left: 16px !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .e-header nav {
+    flex-basis: 100%;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 16px 12px;
+  }
+
+  .e-header nav:not(.show) {
+    display: none !important;
+  }
+
+  .e-header nav .nav-link {
+    margin: 8px 0 !important;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-footer__coluna {
+    min-width: 100%;
+    padding-left: 0 !important;
+  }
+}
