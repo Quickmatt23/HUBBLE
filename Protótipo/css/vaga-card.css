@@ -1,0 +1,67 @@
+/* =====================================================================
+   HUBBLE — COMPONENTE: CARD DE VAGA
+   Usado em Hub.html (carrossel "Vagas Recomendadas") e Evento.html
+   ("Oportunidades Relacionadas"). Seletores duplos (.card.vaga-card:hover,
+   .btn.vaga-card__botao...) garantem prioridade sobre as regras
+   genéricas de .card/.btn/.tag de cada página.
+   ===================================================================== */
+
+.vaga-card,
+.card.vaga-card:hover {
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+.vaga-card__logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.vaga-card__cargo {
+  font-size: 22px;
+  color: #1e1e1e;
+}
+
+.vaga-card__empresa {
+  font-size: 15px;
+  color: gray;
+}
+
+.vaga-card__infos {
+  font-size: 15px;
+  color: #444;
+}
+
+.btn.vaga-card__botao,
+.btn.vaga-card__botao:hover {
+  background-color: #6c3cd4;
+  color: white;
+}
+
+.btn.vaga-card__botao {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.tag.tag--vaga {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.tag.tag--destaque {
+  box-shadow: 0 0 10px #6c3cd4;
+}
+
+@media (max-width: 1599.98px) {
+  .vaga-card,
+  .card.vaga-card:hover {
+    width: 100%;
+    max-width: 400px;
+  }
+}

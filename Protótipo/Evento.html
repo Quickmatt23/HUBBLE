@@ -1,17 +1,16 @@
 <!doctype html>
-<html lang="en"> 
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Evento</title>
+    <title>Hubble | Evento</title>
 	<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico">
 	<!--ESTILO-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/vaga-card.css">
 	<link rel="stylesheet" href="css/evento.css">
-	<!--JS-->
-	<script></script>
 	</head>
   	<body>
 		
@@ -20,31 +19,31 @@
 				<div class="d-flex" >
 					<div class="conteudo">
 						<a href="Hub.html">
-						<div class="voltar d-flex justify-content-center" style="width: 300px;">
+						<div class="voltar d-flex justify-content-center voltar--largura">
 							<i class="bi bi-arrow-left pe-1"></i><p>voltar</p>
 						</div>
 						</a>
-						<div class="principal" style="width: 700px;">
+						<div class="principal principal--largura">
 							<h1>Show Angra Maria</h1>
-							<div style="margin-right: 300px; margin-top: 30px;" >
-								<div class="d-flex justify-content-center" style="gap: 15px;">
+							<div class="principal__infos" >
+								<div class="d-flex justify-content-center info-linha">
 									<i class="bi bi-geo-alt-fill"></i><p>Centro de eventos de Uberlândia</p>
 								</div>
-								<div class="d-flex justify-content-center" style="gap: 15px;">
+								<div class="d-flex justify-content-center info-linha">
 									<i class="bi bi-calendar-check-fill"></i><p>12 a 27 de Junho</p>
 								</div>
 							</div>
 						</div>
-						<div class="d-flex justify-content-center align-items-center" style="gap: 100px; padding-top: 0px;">
+						<div class="d-flex justify-content-center align-items-center acoes">
 							<div class="botao-dest">
 								<button>Comprar ingresso</button>
 							</div>
 							<div class="d-flex justify-content-around gostei">
-								<a href="#" id="likeBtn"><i class="bi bi-heart pe-3" style="font-size: 40px;"></i></a>
+								<a href="#" id="likeBtn"><i class="bi bi-heart pe-3 gostei__icone"></i></a>
 								<p class="mt-2" id="likeCount">12K</p>
 							</div>
 						</div>
-						<div class="d-flex justify-content-center compartilhe" style="gap: 50px; padding-top: 60px;">
+						<div class="d-flex justify-content-center compartilhe compartilhe--espaco">
 							<p class="pt-2">Compartilhe</p>
 
 							<!-- WhatsApp -->
@@ -96,9 +95,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="d-flex popp-font-2" >
-			>
-				<div class="sobre" style="padding-top: 60px;">
+			<div class="d-flex popp-font-2 detalhes">
+				<div class="sobre pt-60">
 					<div class="card">
 						<h2>Descrição do evento</h2>
 						<div class="desc" id="descCompleta">
@@ -179,7 +177,7 @@
 							<p>
 							Aceitamos os principais cartões de crédito:
 							</p>
-							<img src="imagens/cartoes.png" class="p-1" style="width: 400px;">
+							<img src="imagens/cartoes.png" class="p-1 cartoes" alt="Bandeiras de cartão aceitas">
 							<p><strong>Até 10x no Cartão de Crédito</strong></p>
 							
 
@@ -205,7 +203,7 @@
 				</div>
 
 				<!-- Card Filtros -->
-				<div class="card-filtros popp-font-2" style="width: 600px ; border: none">
+				<div class="card-filtros popp-font-2 card-filtros--sem-borda">
 					<h3>Filtros</h3>
 					<div class="filtros-tags">
 					<span class="tag">Show</span>
@@ -219,132 +217,130 @@
 			</div>
 				
 				<div class="participantes">
-					<h1 style="font-size: 35px;">Participantes</h1>
-					<center>
-					<div class="d-flex popp-font-2" style="gap: 50px; padding: 20px;" >
+					<h1 class="participantes__titulo">Participantes</h1>
+					<div class="d-flex popp-font-2 participantes__lista">
 						<div class="participante ms-5">
-							<div class="foto" style="  background-image: url('imagens/evento_dest_1.webp');"></div>
+							<div class="foto" style="background-image: url('imagens/evento_dest_1.webp');"></div>
 							<p>Angra Maria </p>
 						</div>
 						<div class="participante">
-							<div class="foto" style="  background-image: url('imagens/participante1.png');"></div>
+							<div class="foto" style="background-image: url('imagens/participante1.png');"></div>
 							<p>Julio Ramos (Baterista)</p>
 						</div>
 						<div class="participante">
-							<div class="foto" style="  background-image: url('imagens/participante2.png');"></div>
+							<div class="foto" style="background-image: url('imagens/participante2.png');"></div>
 							<p>Marcos Teixeira</p>
 						</div>
 						<div class="participante">
-							<div class="foto" style="  background-image: url('imagens/participante3.png');"></div>
+							<div class="foto" style="background-image: url('imagens/participante3.png');"></div>
 							<p>Rapper P. Diddo</p>
 						</div>
 					</div>
-				</center>
 				</div>
 			</div>
-			<div class="menor" style="margin-top: -60px;">
-				<h2 style="padding: 30px;">Oportunidades Relacionadas</h2>
-				<div class="vagas d-flex justify-content-around" style="gap: -10px;">
+			<div class="menor menor--sobe">
+				<h2 class="secao-titulo">Oportunidades Relacionadas</h2>
+				<div class="vagas d-flex justify-content-around">
 					
 					<!-- Operador de Som -->
-					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+					<div class="card p-4 rounded vaga vaga-card">
 						<div class="d-flex align-items-center mb-3">
 							<div class="ms-3">
-								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Operador de Som</p>
-								<p class="m-0" style="font-size: 15px; color: gray;">Evento Musical · Freelancer</p>
+								<p class="m-0 fw-bold vaga-card__cargo">Operador de Som</p>
+								<p class="m-0 vaga-card__empresa">Evento Musical · Freelancer</p>
 							</div>
 						</div>
 						<div class="text-center">
-							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+							<div class="d-flex justify-content-between flex-wrap mb-3 vaga-card__infos">
 								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
 								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
 								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
 								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
 							</div>
 							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Áudio</span>
+								<span class="tag tag--vaga">Evento</span>
+								<span class="tag tag--vaga">Freelancer</span>
+								<span class="tag tag--vaga">Áudio</span>
 							</div>
-							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+							<button class="btn fw-bold w-90 vaga-card__botao">
 								Ver mais
 							</button>
 						</div>
 					</div>
 
 					<!-- Segurança -->
-					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+					<div class="card p-4 rounded vaga vaga-card">
 						<div class="d-flex align-items-center mb-3">
 							<div class="ms-3">
-								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Segurança</p>
-								<p class="m-0" style="font-size: 15px; color: gray;">Show ao Vivo · Freelancer</p>
+								<p class="m-0 fw-bold vaga-card__cargo">Segurança</p>
+								<p class="m-0 vaga-card__empresa">Show ao Vivo · Freelancer</p>
 							</div>
 						</div>
 						<div class="text-center">
-							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+							<div class="d-flex justify-content-between flex-wrap mb-3 vaga-card__infos">
 								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
 								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
 								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
 								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
 							</div>
 							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Segurança</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
+								<span class="tag tag--vaga">Segurança</span>
+								<span class="tag tag--vaga">Freelancer</span>
+								<span class="tag tag--vaga">Evento</span>
 							</div>
-							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+							<button class="btn fw-bold w-90 vaga-card__botao">
 								Ver mais
 							</button>
 						</div>
 					</div>
 
 					<!-- Bartender -->
-					<div class="card p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+					<div class="card p-4 rounded vaga vaga-card">
 						<div class="d-flex align-items-center mb-3">
 							<div class="ms-3">
-								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Bartender</p>
-								<p class="m-0" style="font-size: 15px; color: gray;">Show Noturno · Freelancer</p>
+								<p class="m-0 fw-bold vaga-card__cargo">Bartender</p>
+								<p class="m-0 vaga-card__empresa">Show Noturno · Freelancer</p>
 							</div>
 						</div>
 						<div class="text-center">
-							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+							<div class="d-flex justify-content-between flex-wrap mb-3 vaga-card__infos">
 								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
 								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
 								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
 								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
 							</div>
 							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Bartender</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Evento</span>
+								<span class="tag tag--vaga">Bartender</span>
+								<span class="tag tag--vaga">Freelancer</span>
+								<span class="tag tag--vaga">Evento</span>
 							</div>
-							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+							<button class="btn fw-bold w-90 vaga-card__botao">
 								Ver mais
 							</button>
 						</div>
 					</div>
 
 					<!-- Operador de Mesa de Luz -->
-					<div class="card-vaga p-4 rounded vaga" style="width: 400px; border-radius: 20px; border: 2px solid #e0e0e0;">
+					<div class="card-vaga p-4 rounded vaga vaga-card">
 						<div class="d-flex align-items-center mb-3">
 							<div class="ms-3">
-								<p class="m-0 fw-bold" style="font-size: 22px; color: #1e1e1e;">Operador de Mesa de Luz</p>
-								<p class="m-0" style="font-size: 15px; color: gray;">Show de Música · Freelancer</p>
+								<p class="m-0 fw-bold vaga-card__cargo">Operador de Mesa de Luz</p>
+								<p class="m-0 vaga-card__empresa">Show de Música · Freelancer</p>
 							</div>
 						</div>
 						<div class="text-center">
-							<div class="d-flex justify-content-between flex-wrap mb-3" style="font-size: 15px; color: #444;">
+							<div class="d-flex justify-content-between flex-wrap mb-3 vaga-card__infos">
 								<p class="mx-2"><i class="bi bi-geo-alt-fill me-1"></i>Presencial</p>
 								<p class="mx-2"><i class="bi bi-briefcase-fill me-1"></i>Freelancer</p>
 								<p class="mx-2"><i class="bi bi-clock-fill me-1"></i>Evento Único</p>
 								<p class="mx-2"><i class="bi bi-speedometer2 me-1"></i>Noturno</p>
 							</div>
 							<div class="mb-4 d-flex justify-content-center gap-2 flex-wrap">
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Iluminação</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Freelancer</span>
-								<span class="tag" style="font-size: 13px; padding: 6px 12px;">Show</span>
+								<span class="tag tag--vaga">Iluminação</span>
+								<span class="tag tag--vaga">Freelancer</span>
+								<span class="tag tag--vaga">Show</span>
 							</div>
-							<button class="btn fw-bold w-90" style="background-color: #6c3cd4; color: white; font-size: 18px; padding: 12px; border-radius: 7px;">
+							<button class="btn fw-bold w-90 vaga-card__botao">
 								Ver mais
 							</button>
 						</div>
@@ -355,13 +351,12 @@
 
 			<div class="local">
 				
-				<h2 style="padding: 30px;">Local do Evento</h2>
+				<h2 class="secao-titulo">Local do Evento</h2>
 
-				<div style="border-radius: 12px; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.5); max-width: 100%;">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.4969909281463!2d-48.26292442388096!3d-18.90938350734225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445a26b0f9a29%3A0x3fb35e6e6e1fc26b!2sCenter%20Convention%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1753212239360!5m2!1spt-BR!2sbr" 
+				<div class="mapa">
+					<iframe class="border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.4969909281463!2d-48.26292442388096!3d-18.90938350734225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445a26b0f9a29%3A0x3fb35e6e6e1fc26b!2sCenter%20Convention%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1753212239360!5m2!1spt-BR!2sbr" 
 					width="100%" 
 					height="250" 
-					style="border:0;" 
 					allowfullscreen="" 
 					loading="lazy" 
 					referrerpolicy="no-referrer-when-downgrade"
