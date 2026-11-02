@@ -1,17 +1,16 @@
-.fundo-logo{
-  background-image: url("../imagens/fundo-5.png"); /* Mantenha aqui */
+/* =====================================================================
+   HUBBLE — EMPRESAS E PARCEIROS (empresas_e_parceiros.html)
+   ===================================================================== */
+
+.fundo-logo {
+  background-image: url("../imagens/fundo-5.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* ======================== ÍCONE ZOOM ======================== */
-/* Animação suave ao passar o mouse no ícone */
-.zoom {
-  transition: transform 0.2s;
-}
-
+/* ======================== COMPONENTES ======================== */
 .button {
   border: none;
   padding: 16px 32px;
@@ -28,25 +27,66 @@
   color: rgb(255, 255, 255);
 }
 
-.card {
-  box-shadow: 0 0 12px #000000;
-  border: #000000 solid 2px;
-  background-color: #1a1a1a;
-  color: white;
-}
-
 .sombra {
   text-shadow: 0 2px 4px black;
 }
-/*teste =======================================*/
 
+/* ======================== DESTAQUE ======================== */
+.hero__imagem {
+  float: inline-end;
+  width: 540px;
+  margin: 3rem 3rem 0 0;
+  padding: 3rem 3rem 0 0;
+}
+
+.hero__titulo-box {
+  width: 1000px;
+  margin-left: 3rem;
+  padding: calc(96px + 0.5rem + 3rem) 0 0 3rem; /* substitui os 4 <br> + mt-2 + pt-5 */
+}
+
+.hero__titulo {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.hero__texto-box {
+  width: 600px;
+  margin-left: 3rem;
+  padding: 48px 0 48px 3rem;
+}
+
+.hero__texto {
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* ======================== PARCEIROS ======================== */
+.parceiros {
+  width: 100%;
+  background-color: #221824;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.39);
+  padding: 50px 0;
+}
+
+.parceiros__titulo {
+  margin-bottom: calc(0.5rem + 24px);
+}
+
+.parceiros__lista {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Card de empresa */
 .card {
+  width: 350px;
   background-color: #121212;
   color: white;
-  width: 350px;
+  border: #000000 solid 2px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .card-header {
@@ -66,13 +106,82 @@
   font-size: 0.9rem;
 }
 
+.card-body hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 1rem 0;
+}
+
 .bold {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.card-body hr {
-  border: none;
-  border-top: 1px solid #aaa;
-  margin: 1rem 0;
+/* ======================== CONTATO ======================== */
+.contato {
+  width: 100%;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.39);
+  padding-bottom: 24px;
+}
+
+.contato .container {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.contato__texto {
+  text-align: center;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+/* ======================== RESPONSIVO ======================== */
+@media (max-width: 991.98px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .hero__imagem {
+    order: 3;
+    float: none;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 2rem;
+    padding: 0;
+  }
+
+  .hero__titulo-box,
+  .hero__texto-box {
+    width: auto;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .hero__titulo-box {
+    padding-top: 3rem;
+  }
+
+  .hero__texto-box {
+    padding-top: 1rem;
+  }
+
+  .hero__titulo {
+    font-size: clamp(36px, 9vw, 60px);
+  }
+
+  .parceiros__titulo {
+    padding-left: 16px !important;
+  }
+
+  .parceiros__lista {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
 }

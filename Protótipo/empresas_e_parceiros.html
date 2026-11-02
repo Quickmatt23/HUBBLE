@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/empresas-parceiros.css">
-	<!--JS-->
-	<script></script>
 	</head>
   	<body class="fundo-logo">
 		<header class="e-header e-header--solido d-flex justify-content-between align-items-center">
@@ -30,44 +28,40 @@
 			</nav>
 		</header>
 		<main>
-			<!-- SLOGAN E LOGO -->
-			<div>
-				<img src="imagens/empresas-parceria-icon.png" alt="Foguete decolando" class="mt-5 pt-5 me-5 pe-5" style="float: inline-end; width: 540px;">
-				<br><br><br><br>
-				<div class="pt-5 mt-2 ps-5 ms-5 " style="width: 1000px;">
-					<h1 class="popp-font" style="color: #ffffff; font-size: 60px;">Nossas Pacerias</h1>
-				</div>
-				<br><br>
-				<div class="ps-5 ms-5 " style="width: 600px;">
-					<p class="popp-font fs-5 sombra" style="color: #ffffff; text-align: justify;">Valorizamos profundamente as parcerias que impulsionam nosso compromisso com a qualidade, a inovação e o desenvolvimento coletivo. Nesta seção, destacamos as empresas e organizações que caminham conosco, compartilhando propósitos e contribuindo com conhecimento, tecnologia e experiências valiosas. Juntas, essas colaborações nos permitem oferecer soluções mais eficientes, gerar impacto positivo e fortalecer o ecossistema em que atuamos.</p>
-					<br><br>
-				</div>
-			</div>
 
-			<!-- Parceiros  -->
-			<div style="width: 100%; background-color: #221824; box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.39); padding-bottom: 50px; padding-top: 50px">
-				<h1 class="popp-font ps-5" style="color: white;">Conheça um pouco deles!</h1>
-				<br>
-				<div class="d-flex justify-content-around">
+			<!-- ===== DESTAQUE ===== -->
+			<section class="hero">
+				<img src="imagens/empresas-parceria-icon.png" alt="Ilustração de parceria" class="hero__imagem">
+				<div class="hero__titulo-box">
+					<h1 class="popp-font hero__titulo">Nossas Pacerias</h1>
+				</div>
+				<div class="hero__texto-box">
+					<p class="popp-font fs-5 sombra hero__texto">Valorizamos profundamente as parcerias que impulsionam nosso compromisso com a qualidade, a inovação e o desenvolvimento coletivo. Nesta seção, destacamos as empresas e organizações que caminham conosco, compartilhando propósitos e contribuindo com conhecimento, tecnologia e experiências valiosas. Juntas, essas colaborações nos permitem oferecer soluções mais eficientes, gerar impacto positivo e fortalecer o ecossistema em que atuamos.</p>
+				</div>
+			</section>
 
-					<!-- CARD DE EMPRESAS -->
-					<div class="card popp-font">
-						<div class="card-header">
-							<h2>Green Guará</h2>
-							<img src="imagens/parceiro-1.png" height="210px" alt="">
-						</div>
-						<div class="card-body">
-							<p class="bold">Startup Ambiental</p>
-							<p>Startup ambiental dedicada ao reflorestamento inteligente e compensação de carbono, promovendo sustentabilidade e impacto social no Cerrado.</p>
-							<hr>
-							<div>
-								<center>
+			<!-- ===== PARCEIROS ===== -->
+			<section class="parceiros">
+				<h1 class="popp-font ps-5 text-white parceiros__titulo">Conheça um pouco deles!</h1>
+				<div class="parceiros__lista">
+
+						<!-- Green Guará -->
+						<div class="card popp-font">
+							<div class="card-header">
+								<h2>Green Guará</h2>
+								<img src="imagens/parceiro-1.png" height="210" alt="Logo Green Guará">
+							</div>
+							<div class="card-body">
+								<p class="bold">Startup Ambiental</p>
+								<p>Startup ambiental dedicada ao reflorestamento inteligente e compensação de carbono, promovendo sustentabilidade e impacto social no Cerrado.</p>
+								<hr>
+								<div class="text-center">
 									<div class="row justify-content-around">
 										<div class="col">
-											<img src="imagens/email.png" alt="" width="30px" class="py-3">
+											<img src="imagens/email.png" alt="E-mail" width="30" class="py-3">
 										</div>
 										<div class="col">
-											<img src="imagens/telefone.png" alt="" width="20px" class="py-3">
+											<img src="imagens/telefone.png" alt="Telefone" width="20" class="py-3">
 										</div>
 									</div>
 									<div class="row justify-content-around">
@@ -78,29 +72,27 @@
 											<span>(19) 99921-9921</span>
 										</div>
 									</div>
-								</center>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- CARD DE EMPRESAS -->
-					<div class="card popp-font">
-						<div class="card-header">
-							<h2>Lyradata</h2>
-							<img src="imagens/parceiro-2.png" height="210px" alt="">
-						</div>
-						<div class="card-body">
-							<p class="bold">Análises de dados</p>
-							<p>Oferece plataformas de análise de dados para o agronegócio, ajudando produtores e empresas a tomarem decisões mais estratégicas e sustentáveis.</p>
-							<hr>
-							<div>
-								<center>
+						<!-- Lyradata -->
+						<div class="card popp-font">
+							<div class="card-header">
+								<h2>Lyradata</h2>
+								<img src="imagens/parceiro-2.png" height="210" alt="Logo Lyradata">
+							</div>
+							<div class="card-body">
+								<p class="bold">Análises de dados</p>
+								<p>Oferece plataformas de análise de dados para o agronegócio, ajudando produtores e empresas a tomarem decisões mais estratégicas e sustentáveis.</p>
+								<hr>
+								<div class="text-center">
 									<div class="row justify-content-around">
 										<div class="col">
-											<img src="imagens/email.png" alt="" width="30px" class="py-3">
+											<img src="imagens/email.png" alt="E-mail" width="30" class="py-3">
 										</div>
 										<div class="col">
-											<img src="imagens/telefone.png" alt="" width="20px" class="py-3">
+											<img src="imagens/telefone.png" alt="Telefone" width="20" class="py-3">
 										</div>
 									</div>
 									<div class="row justify-content-around">
@@ -111,29 +103,27 @@
 											<span>(18) 98821-8821</span>
 										</div>
 									</div>
-								</center>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- CARD DE EMPRESAS -->
-					<div class="card popp-font">
-						<div class="card-header">
-							<h2>VOLTAI</h2>
-							<img src="imagens/parceiro-3.png" height="210px" alt="">
-						</div>
-						<div class="card-body">
-							<p class="bold">Desenvovimento de IA e sistemas</p>
-							<p>Cria assistentes virtuais e sistemas preditivos com inteligência artificial, otimizando processos em áreas como saúde, logística e atendimento.</p>
-							<hr>
-							<div>
-								<center>
+						<!-- VOLTAI -->
+						<div class="card popp-font">
+							<div class="card-header">
+								<h2>VOLTAI</h2>
+								<img src="imagens/parceiro-3.png" height="210" alt="Logo VOLTAI">
+							</div>
+							<div class="card-body">
+								<p class="bold">Desenvovimento de IA e sistemas</p>
+								<p>Cria assistentes virtuais e sistemas preditivos com inteligência artificial, otimizando processos em áreas como saúde, logística e atendimento.</p>
+								<hr>
+								<div class="text-center">
 									<div class="row justify-content-around">
 										<div class="col">
-											<img src="imagens/email.png" alt="" width="30px" class="py-3">
+											<img src="imagens/email.png" alt="E-mail" width="30" class="py-3">
 										</div>
 										<div class="col">
-											<img src="imagens/telefone.png" alt="" width="20px" class="py-3">
+											<img src="imagens/telefone.png" alt="Telefone" width="20" class="py-3">
 										</div>
 									</div>
 									<div class="row justify-content-around">
@@ -144,29 +134,27 @@
 											<span>(17) 97721-7721</span>
 										</div>
 									</div>
-								</center>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- CARD DE EMPRESAS -->
-					<div class="card popp-font">
-						<div class="card-header">
-							<h2>NEOTECH</h2>
-							<img src="imagens/parceiro-4.png" height="210px" alt="">
-						</div>
-						<div class="card-body">
-							<p class="bold">Automação e IA</p>
-							<p>Desenvolve soluções de automação e inteligência artificial para pequenas e médias empresas, promovendo eficiência e transformação digital local.</p>
-							<hr>
-							<div>
-								<center>
+						<!-- NEOTECH -->
+						<div class="card popp-font">
+							<div class="card-header">
+								<h2>NEOTECH</h2>
+								<img src="imagens/parceiro-4.png" height="210" alt="Logo NEOTECH">
+							</div>
+							<div class="card-body">
+								<p class="bold">Automação e IA</p>
+								<p>Desenvolve soluções de automação e inteligência artificial para pequenas e médias empresas, promovendo eficiência e transformação digital local.</p>
+								<hr>
+								<div class="text-center">
 									<div class="row justify-content-around">
 										<div class="col">
-											<img src="imagens/email.png" alt="" width="30px" class="py-3">
+											<img src="imagens/email.png" alt="E-mail" width="30" class="py-3">
 										</div>
 										<div class="col">
-											<img src="imagens/telefone.png" alt="" width="20px" class="py-3">
+											<img src="imagens/telefone.png" alt="Telefone" width="20" class="py-3">
 										</div>
 									</div>
 									<div class="row justify-content-around">
@@ -177,24 +165,21 @@
 											<span>(16) 96621-6621</span>
 										</div>
 									</div>
-								</center>
+								</div>
 							</div>
 						</div>
+				</div>
+			</section>
+
+			<!-- ===== CONTATO ===== -->
+			<section class="fundo-logo contato">
+				<div class="container">
+					<p class="popp-font contato__texto">Se sua empresa compartilha nossos valores e acredita no poder da colaboração para gerar impacto positivo, entre em contato. Estamos sempre abertos a novas parcerias que tragam inovação, crescimento mútuo e resultados transformadores.</p>
+					<div class="text-center">
+						<a class="btn popp-font button">ENTRE EM CONTATO</a>
 					</div>
 				</div>
-			</div>		
-			<!-- Contato -->
-			<div class="fundo-logo" style="width: 100%; box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.39);">
-				<div class="container">
-					<br><br><br>
-					<p class="popp-font" style="text-align: center; color: #ffffff;   font-size: 21px;">Se sua empresa compartilha nossos valores e acredita no poder da colaboração para gerar impacto positivo, entre em contato. Estamos sempre abertos a novas parcerias que tragam inovação, crescimento mútuo e resultados transformadores.</p>
-					<center>
-						<a class="btn popp-font button">ENTRE EM CONTATO</a>
-					</center>
-					<br><br><br>
-				</div>
-				<br>
-			</div>
+			</section>
 		</main>
 		<footer class="site-footer">
 			<div class="site-footer__container">
