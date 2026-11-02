@@ -6,31 +6,6 @@
   background-attachment: fixed;
 }
 
-/* ======================== HEADER ======================== */
-/* Define a altura da barra de navegação */
-.e-header {
-  height: 65px;
-
-  top: 0;
-  z-index: 100;
-  background: linear-gradient(
-    135deg,
-    rgba(34, 24, 36 , 0.8),
-    rgba(34, 20, 39 , 0.8)
-  ); /* Gradiente escuro com transparência */
-
-  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(12px); /* Efeito de desfoque */
-  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
-}
-
-/* Estilo quando o link é hover (mouse por cima) */
-.a-1:hover {
-  color: #ec5e5e;                   /* Altera cor para roxo */
-  text-shadow: 2px 2px 4px #000;    /* Sombra de texto ao passar o mouse */
-  text-decoration: none;           /* Remove sublinhado padrão */
-}
-
 /* ======================== ÍCONE ZOOM ======================== */
 /* Animação suave ao passar o mouse no ícone */
 .zoom {

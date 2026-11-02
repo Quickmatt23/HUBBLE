@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,152 +10,141 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/inicio.css">
-	<!--JS-->
-	<script></script>
 	</head>
   	<body>
 		<header class="e-header d-flex justify-content-between align-items-center">
-		  	<div class="d-flex justify-content-around align-items-center">
-				<img src="imagens/logo.png" class="ms-5" alt="Logo da Hubble" width="55px">
+			<div class="d-flex justify-content-around align-items-center">
+				<img src="imagens/logo.png" class="ms-5" alt="Logo da Hubble" width="55">
 				<h1 class="mol-font m-0 text-white fs-2 ms-2">HUBBLE</h1>
-			</div> 
-			<nav class="d-flex popp-font-2 me-5">
-			<a class="nav-link a-1 me-4 popp-font-2 ativo" href="#">Início</a>
-			<a class="nav-link a-1 me-4 popp-font-2 desativado" href="Login.html">Hub</a>
-			<a class="nav-link a-1 me-4 popp-font-2 desativado" href="empresas_e_parceiros.html">Empresas e Parceiros</a>
-			<a class="nav-link a-1 me-4 popp-font-2 desativado" href="Sobre_nos.html">Sobre Nós</a>
+			</div>
+			<button class="menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menu-site" aria-controls="menu-site" aria-expanded="false" aria-label="Abrir menu">
+				<i class="bi bi-list"></i>
+			</button>
+			<nav id="menu-site" class="collapse d-flex popp-font-2 me-5">
+				<a class="nav-link a-1 me-4 popp-font-2 ativo" href="index.html" aria-current="page">Início</a>
+				<a class="nav-link a-1 me-4 popp-font-2" href="Login.html">Hub</a>
+				<a class="nav-link a-1 me-4 popp-font-2" href="empresas_e_parceiros.html">Empresas e Parceiros</a>
+				<a class="nav-link a-1 me-4 popp-font-2" href="Sobre_nos.html">Sobre Nós</a>
 			</nav>
 		</header>
 		<main>
 
-			<div class="contaiener">
-				<img src="imagens/imagem_foguete.png" alt="Foguete decolando" class="mt-5 pt-5 me-5 pe-5" style="float: inline-end; width: 640px;">
+			<!-- ===== DESTAQUE PRINCIPAL ===== -->
+			<section class="hero">
+				<img src="imagens/imagem_foguete.png" alt="Foguete decolando" class="hero__imagem">
 
-				<!-- DESTAQUE PRINCIPAL -->
-
-				<br><br><br><br>
-				<div class="pt-5 mt-2 ps-5 ms-5 " style="width: 600px;">
-					<h1 class="rust-font" style="color: #ffffff; font-size: 70px;">ENCONTRE OPORTUNIDADES PERTO DE VOCÊ</h1>
+				<div class="hero__titulo-box">
+					<h1 class="rust-font hero__titulo">ENCONTRE OPORTUNIDADES PERTO DE VOCÊ</h1>
 				</div>
-				<div class="ps-5 ms-5 " style="width: 1000px;">
-					<p class="popp-font fs-5 sombra" style="color: #ffffff; text-align: justify;">Acompanhe as principais vagas de emprego e fique por dentro dos eventos que movimentam o ecossistema de inovação e tecnologia em Uberlândia — tudo de forma rápida, organizada e acessível.</p>
+				<div class="hero__texto-box">
+					<p class="popp-font fs-5 sombra hero__texto">Acompanhe as principais vagas de emprego e fique por dentro dos eventos que movimentam o ecossistema de inovação e tecnologia em Uberlândia — tudo de forma rápida, organizada e acessível.</p>
 					<br>
-					<button class="btn btn-lg popp-font button fs-5 btn-dark">Encontar Vagas</button>
-					<span class="pe-3"></span>
-					<button class="btn btn-lg popp-font button fs-5 btn-dark">Encontrar eventos</button>
+					<div class="hero__botoes">
+						<button type="button" class="btn btn-lg popp-font button fs-5 btn-dark">Encontar Vagas</button>
+						<button type="button" class="btn btn-lg popp-font button fs-5 btn-dark">Encontrar eventos</button>
+					</div>
 				</div>
-			</div>
+			</section>
 
-				<!-- Parceiros  -->
-
-			<div class="contaiener d-flex justify-content-center" style="width: 100%; background-color: white;">
-				<div class="contaiener">
-					<h1 class="rust-font fs-1 ms-2 pt-5" style="color: #5e17eb; text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);">Nossos Parceiros</h1>
+			<!-- ===== PARCEIROS ===== -->
+			<section class="secao-branca">
+				<div class="d-flex justify-content-center">
+					<h1 class="rust-font fs-1 ms-2 pt-5 titulo-secao">Nossos Parceiros</h1>
 				</div>
-			</div>
-			<div class="contaiener d-flex justify-content-center" style="width: 100%; background-color: white;">
-				<!-- Cards  -->
-
-				<div class="row mt-4 mb-5">
-					<div class="col">
-						<div class="card  mt-4 ms-4 d-flex align-items-center" style="width: 300px; height: 415px;">
-							<img src="imagens/parceiro-1.png" class="card-img-top  mt-3" style=" width: 240px;"  alt="Logo greenguara">
-							<div class="card-body mt-3">
-								<p class="card-text popp-font-2" style="text-align: justify;">Startup ambiental dedicada ao reflorestamento inteligente e compensação de carbono, promovendo sustentabilidade e impacto social no Cerrado.</p>
+				<div class="d-flex justify-content-center">
+					<div class="row parceiros mt-4 mb-5">
+						<div class="col-12 col-md-6 col-xl">
+							<div class="card parceiro-card d-flex align-items-center">
+								<img src="imagens/parceiro-1.png" class="card-img-top parceiro-card__logo" alt="Logo Green Guará">
+								<div class="card-body mt-3">
+									<p class="card-text popp-font-2">Startup ambiental dedicada ao reflorestamento inteligente e compensação de carbono, promovendo sustentabilidade e impacto social no Cerrado.</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card  mt-4 ms-4 d-flex align-items-center" style="width: 300px; height: 415px;">
-							<img src="imagens/parceiro-2.png" class="card-img-top  mt-3" style=" width: 240px;"  alt="Logo lyradata">
-							<div class="card-body mt-3">
-								<p class="card-text popp-font-2" style="text-align: justify;">Oferece plataformas de análise de dados para o agronegócio, ajudando produtores e empresas a tomarem decisões mais estratégicas e sustentáveis.</p>
+						<div class="col-12 col-md-6 col-xl">
+							<div class="card parceiro-card d-flex align-items-center">
+								<img src="imagens/parceiro-2.png" class="card-img-top parceiro-card__logo" alt="Logo Lyradata">
+								<div class="card-body mt-3">
+									<p class="card-text popp-font-2">Oferece plataformas de análise de dados para o agronegócio, ajudando produtores e empresas a tomarem decisões mais estratégicas e sustentáveis.</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card  mt-4 ms-4 d-flex align-items-center" style="width: 300px; height: 415px;">
-							<img src="imagens/parceiro-3.png" class="card-img-top  mt-3" style=" width: 160px;"  alt="Logo voltai">
-							<div class="card-body mt-3">
-								<p class="card-text popp-font-2" style="text-align: justify;" >Cria assistentes virtuais e sistemas preditivos com inteligência artificial, otimizando processos em áreas como saúde, logística e atendimento.</p>
+						<div class="col-12 col-md-6 col-xl">
+							<div class="card parceiro-card d-flex align-items-center">
+								<img src="imagens/parceiro-3.png" class="card-img-top parceiro-card__logo parceiro-card__logo--pequeno" alt="Logo Voltai">
+								<div class="card-body mt-3">
+									<p class="card-text popp-font-2">Cria assistentes virtuais e sistemas preditivos com inteligência artificial, otimizando processos em áreas como saúde, logística e atendimento.</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card  mt-4 ms-4 d-flex align-items-center" style="width: 300px; height: 415px;">
-							<img src="imagens/parceiro-4.png" class="card-img-top  mt-3" style=" width: 200px;"  alt="Logo neotech">
-							<div class="card-body mt-3">
-								<p class="card-text popp-font-2 " style="text-align: justify;">Desenvolve soluções de automação e inteligência artificial para pequenas e médias empresas, promovendo eficiência e transformação digital local.</p>
+						<div class="col-12 col-md-6 col-xl">
+							<div class="card parceiro-card d-flex align-items-center">
+								<img src="imagens/parceiro-4.png" class="card-img-top parceiro-card__logo parceiro-card__logo--medio" alt="Logo Neotech">
+								<div class="card-body mt-3">
+									<p class="card-text popp-font-2">Desenvolve soluções de automação e inteligência artificial para pequenas e médias empresas, promovendo eficiência e transformação digital local.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-			</div>
+			</section>
 
-			<!-- Missão da hubble -->
-			<div class="contaiener d-flex justify-content-start p-c " style="width: 100%; background-color: white;">
-				<h1 class="rust-font fs-1 ms-2 pt-5 mb-3" style="color: #5e17eb; text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);" >Nossa Missão</h1>
-			</div>
-			<div class="contaiener d-flex justify-content-start p-c " style="width: 100%; background-color: white;">
-				<p class="popp-font-2 fs-5 mb-5 pb-5 mt-3" style="color: #221824; width: 1240px; text-align: justify;">A <a class="a">Hubble</a> é uma plataforma digital dedicada a <a class="a">fortalecer o ecossistema de inovação, tecnologia e empreendedorismo</a> em Uberlândia. Nosso objetivo é conectar talentos com startups e grandes empresas locais, promovendo oportunidades de emprego, networking e crescimento profissional.<br>
-					Além disso, <a class="a">reunimos em um só lugar os principais eventos, notícias e informações relevantes para quem vive o universo da inovação</a>. Seja você um estudante, profissional ou empreendedor, aqui é o espaço certo para se atualizar, crescer e se conectar com quem está transformando a região.</p>
-			</div>
-				<!-- JUNTE-SE A UBERHUB -->
-			<div class="d-flex align-items-center ">
-				<div class="pt-5 mt-5 pt-5 ms-5 " style="width: 600px;">
-					<h1 class="rust-font mb-5" style="color: #ffffff; font-size: 65px;">JUNTE-SE AO HUBBLE</h1>
-					<p class="popp-font fs-4 sombra" style="color: #ffffff; ">A <b>Hubble</b> conecta startups, empresas e empreendedores, fortalecendo o ecossistema de inovação em Uberlândia. Promovemos parcerias, eventos e oportunidades que impulsionam o crescimento conjunto e o desenvolvimento regional.</p>
+			<!-- ===== MISSÃO DA HUBBLE ===== -->
+			<section class="secao-branca missao">
+				<h1 class="rust-font fs-1 ms-2 pt-5 mb-3 titulo-secao">Nossa Missão</h1>
+				<p class="popp-font-2 fs-5 mb-5 pb-5 mt-3 missao__texto">A <strong class="destaque">Hubble</strong> é uma plataforma digital dedicada a <strong class="destaque">fortalecer o ecossistema de inovação, tecnologia e empreendedorismo</strong> em Uberlândia. Nosso objetivo é conectar talentos com startups e grandes empresas locais, promovendo oportunidades de emprego, networking e crescimento profissional.<br>
+					Além disso, <strong class="destaque">reunimos em um só lugar os principais eventos, notícias e informações relevantes para quem vive o universo da inovação</strong>. Seja você um estudante, profissional ou empreendedor, aqui é o espaço certo para se atualizar, crescer e se conectar com quem está transformando a região.</p>
+			</section>
+
+			<!-- ===== JUNTE-SE AO HUBBLE ===== -->
+			<section class="junte-se">
+				<div class="junte-se__texto">
+					<h1 class="rust-font mb-5 junte-se__titulo">JUNTE-SE AO HUBBLE</h1>
+					<p class="popp-font fs-4 sombra text-white">A <b>Hubble</b> conecta startups, empresas e empreendedores, fortalecendo o ecossistema de inovação em Uberlândia. Promovemos parcerias, eventos e oportunidades que impulsionam o crescimento conjunto e o desenvolvimento regional.</p>
 					<br>
-					<h1 class="rust-font sombra" style="color: #ffffff; font-size: 45px;">JUNTE-SE AO HUBBLE</h1>
+					<h1 class="rust-font sombra junte-se__subtitulo">JUNTE-SE AO HUBBLE</h1>
 					<br>
-					<a href="Login.html"><button class="btn btn-lg popp-font button fs-4 btn-dark" style="width: 360px;">CADASTRAR</button></a>
+					<a href="Login.html" class="btn btn-lg popp-font button fs-4 btn-dark junte-se__botao">CADASTRAR</a>
 				</div>
-				<img src="imagens/imagem_integracao.png" class="m-c pt-5 mt-5 mb-5" alt="icone de integração" style="float: inline-end; width: 970px;">
-			</div>
-			
+				<img src="imagens/imagem_integracao.png" class="junte-se__imagem" alt="Ícone de integração">
+			</section>
+
 		</main>
 		<br>
 		<br>
-		<footer style="width: 100%; background-color: #221824; color: #ffffff; padding: 30px 0; text-align: center;">
-			<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
-			  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-				
-				<!-- Sobre -->
-				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-				  <h3 style="font-size: 20px; margin-bottom: 10px;"><strong>HUBBLE</strong></h3>
-				  <p style="font-size: 14px; line-height: 1.6;">
-					Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
-				  </p>
+		<footer class="site-footer">
+			<div class="site-footer__container">
+				<div class="site-footer__colunas">
+
+					<!-- Sobre -->
+					<div class="site-footer__coluna">
+						<h3><strong>HUBBLE</strong></h3>
+						<p>
+							Nosso objetivo é conectar pessoas a oportunidades reais. Seja você alguém em busca de um evento inspirador, uma vaga de emprego ou simplesmente querendo expandir sua rede de contatos, nossa plataforma foi feita para você.
+						</p>
+					</div>
+
+					<!-- Contato -->
+					<div class="site-footer__coluna ps-5">
+						<h3>Contato</h3>
+						<p> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
+						<p> (37) 4002-8922</p>
+						<p>HUBBLEsuport@gmail.com</p>
+					</div>
+
+					<!-- Redes Sociais -->
+					<div class="site-footer__coluna">
+						<h3>Siga-nos</h3>
+						<a href="#" class="site-footer__social" aria-label="Instagram"><i class="bi bi-instagram fs-2 "></i></a>
+						<a href="#" class="site-footer__social" aria-label="Facebook"><i class="bi bi-facebook fs-3 ps-3"></i></a>
+						<a href="#" class="site-footer__social" aria-label="LinkedIn"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
+					</div>
 				</div>
-		  
-				<!-- Contato -->
-				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;" class="ps-5">
-				  <h3 style="font-size: 20px; margin-bottom: 10px;">Contato</h3>
-				  <p style="font-size: 14px; line-height: 1.6;"> Av. Orlando Maurício dos Santos, 270 - Sen. Valadares, Pará de Minas - MG, 35661-034</p>
-				  <p style="font-size: 14px; line-height: 1.6;"> (37) 4002-8922</p>
-				  <p style="font-size: 14px; line-height: 1.6;">HUBBLEsuport@gmail.com</p>
-				</div>
-		  
-				<!-- Redes Sociais -->
-				<div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-				  <h3 style="font-size: 20px; margin-bottom: 10px;">Siga-nos</h3>
-				  <a class="zoom">
-					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-instagram fs-2 "></i></a>
-				  </a>
-				  <a class="zoom">
-					<a href="#" style="color: #a74040; font-size: 14px; margin-right: 10px;"><i class="bi bi-facebook fs-3 ps-3"></i></a>
-				  </a>
-				  <a class="zoom">
-					<a href="#" style="color: #a74040; font-size: 14px;"><i class="bi bi-linkedin fs-2 ps-3"></i></a>
-				  </a>
-				</div>
-			  </div>
-			  
-			  <hr style="border: 0.5px solid #444; margin: 20px 0;">
-			  
-			  <p style="font-size: 14px;">© 2025 Booler. Todos os direitos reservados.</p>
-			  <p style="font-size: 14px;">© 2025 Uberhub. Todos os direitos reservados.</p>
+
+				<hr>
+
+				<p>© 2025 Booler. Todos os direitos reservados.</p>
+				<p>© 2025 Uberhub. Todos os direitos reservados.</p>
 			</div>
 		</footer>
 		<!-- JS -->

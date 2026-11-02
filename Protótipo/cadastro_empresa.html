@@ -14,16 +14,19 @@
 	<script></script>
 	</head>
   	<body>
-		<header class="e-header d-flex justify-content-between align-items-center ">
+		<header class="e-header e-header--translucido d-flex justify-content-between align-items-center">
 			<div class="d-flex justify-content-around align-items-center">
-				<img src="imagens/logo.png" class="ms-5" alt="Logo da Hubble" width="55px">
+				<img src="imagens/logo.png" class="ms-5" alt="Logo da Hubble" width="55">
 				<h1 class="mol-font m-0 text-white fs-2 ms-2">HUBBLE</h1>
-			</div> 
-			<nav class="d-flex popp-font-2 me-5">
-				<a class="nav-link a-1 me-4 popp-font-2 desativado" href="index.html">Início</a>
-				<a class="nav-link a-1 me-4 popp-font-2 ativo" href="Login.html">Hub</a>
-				<a class="nav-link a-1 me-4 popp-font-2 desativado" href="empresas_e_parceiros.html">Empresas e Parceiros</a>
-				<a class="nav-link a-1 me-4 popp-font-2 desativado" href="Sobre_nos.html">Sobre Nós</a>
+			</div>
+			<button class="menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menu-site" aria-controls="menu-site" aria-expanded="false" aria-label="Abrir menu">
+				<i class="bi bi-list"></i>
+			</button>
+			<nav id="menu-site" class="collapse d-flex popp-font-2 me-5">
+				<a class="nav-link a-1 me-4 popp-font-2" href="index.html">Início</a>
+				<a class="nav-link a-1 me-4 popp-font-2 ativo" href="Login.html" aria-current="page">Hub</a>
+				<a class="nav-link a-1 me-4 popp-font-2" href="empresas_e_parceiros.html">Empresas e Parceiros</a>
+				<a class="nav-link a-1 me-4 popp-font-2" href="Sobre_nos.html">Sobre Nós</a>
 			</nav>
 		</header>
 		<main>
