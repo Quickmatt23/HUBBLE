@@ -222,3 +222,263 @@ body {
 .ativo3::after {
   width: 100%;
 }
+
+/* ======================== BANNER / ABAS ======================== */
+.banner-acoes {
+  margin-left: 18px;
+}
+
+.abas-container {
+  margin-left: 20px;
+}
+
+.abas {
+  padding-left: 100px;
+}
+
+/* ======================== TABELA DE EVENTOS / VAGAS ======================== */
+.tabela-container {
+  margin-left: 9px;
+}
+
+.tabela {
+  margin-left: 9px;
+  background-color: #f4f4f6;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.sombra-painel {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Barra preta "FILTRAR" */
+.barra-filtro {
+  background-color: #1a1a1a;
+  margin-left: 12px;
+}
+
+.barra-filtro__conteudo {
+  height: 50px;
+}
+
+.barra-filtro__texto {
+  font-size: 20px;
+  color: white;
+}
+
+/* Linhas divisórias grossas */
+.divisor-grosso {
+  border: none;
+  height: 5px;
+  background-color: #1a1a1a;
+}
+
+.divisor-grosso--202020 {
+  background-color: #202020;
+}
+
+.tabela__cor {
+  color: #1a1a1a;
+}
+
+.tabela__cabecalho {
+  color: #1a1a1a;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tabela__linha {
+  margin-bottom: -20px;
+}
+
+.tabela__linha-compacta {
+  margin-bottom: -5px;
+}
+
+.tabela__miniatura {
+  height: 120px;
+  width: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Título do evento/vaga (link) */
+.tabela__titulo {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.tabela__valor-base {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabela__valor {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tabela__valor--cinza {
+  color: #4b4b4b;
+}
+
+.tabela__subtitulo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.tabela__detalhe {
+  font-size: 15px;
+  color: #242424;
+}
+
+.me-100 {
+  margin-right: 100px;
+}
+
+/* ======================== RESPONSIVO ======================== */
+/* Tablets e celulares: a barra lateral vira uma barra no topo e o
+   conteúdo (banner, tabela, formulários, gráficos) ocupa a largura toda. */
+@media (max-width: 991.98px) {
+  .layout,
+  .conteudo.d-flex {
+    flex-direction: column;
+  }
+
+  .conteudo {
+    min-width: 0;
+  }
+
+  /* Barra lateral -> barra superior */
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+  }
+
+  .sidebar-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .profile-section {
+    margin: 0;
+  }
+
+  .profile-pic {
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    background-size: 42px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    overflow-x: auto;
+  }
+
+  .li-menu {
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .menu a {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .selecionado a {
+    padding-left: 8px;
+    border-left-width: 4px;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .dados-icon {
+    width: 32px;
+    height: 22px;
+  }
+
+  /* Banner com botões "Publicar" */
+  .imagem {
+    width: auto !important;
+    height: auto !important;
+    margin: 16px !important;
+    padding: 24px 16px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .button-imagem {
+    width: 100%;
+    max-width: 300px;
+    height: 64px;
+    font-size: 17px;
+  }
+
+  .banner-acoes,
+  .abas-container,
+  .tabela-container,
+  .tabela {
+    margin-left: 0;
+  }
+
+  .abas {
+    padding-left: 16px;
+  }
+
+  .a-13 {
+    font-size: 20px;
+  }
+
+  /* Tabela: cabeçalho some e cada linha vira um "card" empilhado */
+  .tabela__cabecalho {
+    display: none !important;
+  }
+
+  .tabela .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .barra-filtro {
+    margin-left: 0;
+  }
+
+  .tabela__linha,
+  .tabela__linha-compacta {
+    margin-bottom: 0;
+    row-gap: 8px;
+    padding: 12px 0;
+  }
+
+  .me-100 {
+    margin-right: 0;
+  }
+
+  .tabela__miniatura {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Gráficos (Chart.js) */
+  .conteudo canvas {
+    max-width: 100%;
+  }
+}
