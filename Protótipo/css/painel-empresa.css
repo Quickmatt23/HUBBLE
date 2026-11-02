@@ -1,0 +1,224 @@
+/* =====================================================================
+   HUBBLE — PAINEL DA EMPRESA
+   Layout com barra lateral usado em Hub_empresa*, Hub_empresa_criar* e
+   Hub_empresa_dados. Carregue depois de base.css.
+   ===================================================================== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.zoom {
+  transition: transform 0.3s;
+}
+
+/* ======================== LAYOUT ======================== */
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+.conteudo {
+  flex: 1;
+}
+
+/* ======================== BARRA LATERAL ======================== */
+.fundo-sidebar {
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, rgb(41, 33, 51) 0%, rgba(75, 30, 82, 1) 100%);
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: white;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+
+/* Logo / foto da empresa */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('../imagens/parceiro-4.png');
+  background-color: white;
+  background-position: center;
+  background-size: 110px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.li-menu {
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.li-menu:hover a {
+  background-color: #5e3a9e;
+  color: white;
+}
+
+/* Item da página atual */
+.selecionado a {
+  background-color: #5e3a9e;
+  color: white;
+  padding-left: 16px;
+  border-left: 10px solid #2d0c6e;
+}
+
+/* Ícones do menu */
+.icon {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.25s ease-out;
+}
+
+.menu a:hover .icon {
+  transform: scale(1.05);
+}
+
+.perfil-icon {
+  background-image: url('../imagens/conta-icon-claro.png');
+  height: 40px;
+}
+
+.criar-icon {
+  background-image: url('../imagens/criar-icon-claros.png');
+}
+
+.dados-icon {
+  background-image: url('../imagens/dados-icon-claro.png');
+  height: 30px;
+  width: 42px;
+}
+
+.sair-icon {
+  background-image: url('../imagens/sair-icon-claro.png');
+  height: 30px;
+}
+
+/* ======================== ABAS (Eventos / Vagas) ======================== */
+.nav-link2 {
+  text-decoration: none;
+}
+
+.a-12 {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+  color: #1a1a1a;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.a-12::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #1a1a1a;
+  transition: width 0.3s ease-in-out;
+}
+
+.a-12:hover {
+  color: #1a1a1a;
+  text-shadow: 2px 2px 4px #ffffff;
+  text-decoration: none;
+}
+
+.a-12:hover::after {
+  width: 100%;
+}
+
+.a-13 {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  color: #221f1f;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.a-13::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #6a00d9;
+  transition: width 0.3s ease-in-out;
+}
+
+.a-13:hover {
+  color: #6a00d9;
+  text-shadow: 2px 2px 4px #ffffff;
+  text-decoration: none;
+}
+
+.a-13:hover::after {
+  width: 100%;
+}
+
+.ativo3 {
+  color: #6a00d9;
+  text-shadow: 0 4px 10px rgba(128, 0, 255, 0.25);
+}
+
+.ativo3::after {
+  width: 100%;
+}
