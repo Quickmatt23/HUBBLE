@@ -2,24 +2,24 @@
 /* Fonte 1: Poppins Bold */
 @font-face {
   font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Bold.ttf');
 }
 
 /* Fonte 2: Molgan Regular */
 @font-face {
   font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+  src: url('../fontes/molgan-font/MolganRegular-YqWj2.otf');
 }
 
 /* Fonte 3: Intro-Rust */
 @font-face {
   font-family: font3;
-  src: url('fontes/Rust-font/IntroRust.otf');
+  src: url('../fontes/Rust-font/IntroRust.otf');
 }
 
 @font-face {
   font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Medium.ttf');
 }
 
 /* Classe para aplicar a fonte Poppins */
@@ -260,7 +260,7 @@ html, body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url('imagens/Logo 4.png');
+  background-image: url('../imagens/parceiro-4.png');
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -340,16 +340,16 @@ html, body {
 
 /* Ícones específicos */
 .perfil-icon {
-  background-image: url('imagens/conta-icon-claro.png');
+  background-image: url('../imagens/conta-icon-claro.png');
   height: 40px;
 }
 
 .criar-icon {
-  background-image: url('imagens/criar-icon-claros.png');
+  background-image: url('../imagens/criar-icon-claros.png');
 }
 
 .dados-icon {
-  background-image: url('imagens/dados-icon-claro.png');
+  background-image: url('../imagens/dados-icon-claro.png');
   height: 30px;
   width: 42px;
   background-position: center;
@@ -357,7 +357,7 @@ html, body {
 }
 
 .sair-icon {
-  background-image: url('imagens/sair-icon-claro.png');
+  background-image: url('../imagens/sair-icon-claro.png');
   height: 30px;
 }
 
@@ -447,7 +447,7 @@ html, body {
   width: 1630px;
   height: 300px;
   border-radius: 5px;
-  background-image: url('imagens/fundo-7.png');
+  background-image: url('../imagens/fundo-7.png');
   background-size: cover;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
@@ -489,11 +489,11 @@ html, body {
   margin-right: 20px;
   width: 35px;
   height: 35px;
-  background-image: url('imagens/adicionar-icon-escuro.png');
+  background-image: url('../imagens/adicionar-icon-escuro.png');
   background-size: cover;
   transition: background-image 1.0s ease;
 }
 
 .button-imagem:hover .imagem-botao {
-  background-image: url('imagens/adicionar-icon-claro.png');
+  background-image: url('../imagens/adicionar-icon-claro.png');
 }

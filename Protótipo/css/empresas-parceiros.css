@@ -2,24 +2,24 @@
 /* Fonte 1: Poppins Bold */
 @font-face {
   font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Bold.ttf');
 }
 
 /* Fonte 2: Molgan Regular */
 @font-face {
   font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+  src: url('../fontes/molgan-font/MolganRegular-YqWj2.otf');
 }
 
 /* Fonte 3: Intro-Rust */
 @font-face {
   font-family: font3;
-  src: url('fontes/Rust-font/IntroRust.otf');
+  src: url('../fontes/Rust-font/IntroRust.otf');
 }
 
 @font-face {
   font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Medium.ttf');
 }
 
 /* Classe para aplicar a fonte Poppins */
@@ -42,10 +42,8 @@
   text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
 }
 
-body {
- display: flex;
-  flex-direction: column;
-  background-image: url("imagens/fundo2.webp"); /* Mantenha aqui */
+.fundo-logo{
+  background-image: url("../imagens/fundo-5.png"); /* Mantenha aqui */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,8 +59,8 @@ body {
   z-index: 100;
   background: linear-gradient(
     135deg,
-    rgba(34, 24, 36 , 0.95),
-    rgba(34, 20, 39 , 0.95)
+    rgba(34, 24, 36 , 0.8),
+    rgba(34, 20, 39 , 0.8)
   ); /* Gradiente escuro com transparência */
 
   box-shadow: 0 4px 22px rgba(0, 0, 0, 0.3);
@@ -183,8 +181,10 @@ body {
 }
 
 .card {
-  box-shadow: 0 0 12px #371b35;
-  border: #371b35 solid 2px;
+  box-shadow: 0 0 12px #000000;
+  border: #000000 solid 2px;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 .p-c {
@@ -201,4 +201,56 @@ body {
 
 .sombra {
   text-shadow: 0 2px 4px black;
+}
+/*teste =======================================*/
+
+.card {
+  background-color: #121212;
+  color: white;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.card-body {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 1rem 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.3rem 0;
 }

@@ -2,24 +2,24 @@
 /* Fonte 1: Poppins Bold */
 @font-face {
   font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Bold.ttf');
 }
 
 /* Fonte 2: Molgan Regular */
 @font-face {
   font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+  src: url('../fontes/molgan-font/MolganRegular-YqWj2.otf');
 }
 
 /* Fonte 3: Intro-Rust */
 @font-face {
   font-family: font3;
-  src: url('fontes/Rust-font/IntroRust.otf');
+  src: url('../fontes/Rust-font/IntroRust.otf');
 }
 
 @font-face {
   font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Medium.ttf');
 }
 
 /* Classe para aplicar a fonte Poppins */
@@ -42,12 +42,15 @@
   text-shadow: -4px 3px 1px #f75757; /* Sombra sutil para destaque */
 }
 
-.fundo-logo{
-  background-image: url("imagens/fundo-5.png"); /* Mantenha aqui */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../imagens/fundo-3_1.webp"); /* Mantenha aqui */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 /* ======================== HEADER ======================== */
@@ -67,7 +70,6 @@
   backdrop-filter: blur(12px); /* Efeito de desfoque */
   -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
 }
-
 /* ======================== LINKS DE NAVEGAÇÃO ======================== */
 /* Estilo base para os links (posição relativa para o pseudo-elemento ::after funcionar) */
 .a-1 {
@@ -180,11 +182,28 @@
   color: rgb(255, 255, 255);
 }
 
+.button-login {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  background-color: #6a2fdf;
+  border-color: #5e17eb;
+  color: #ffffff;
+}
+
+.button-login:hover {
+  background-color: #6a2fdf;
+  color: rgb(255, 255, 255);
+}
+
+/*style="background-color: #6a2fdf; border-color: #5e17eb; color: white"*/
+
 .card {
-  box-shadow: 0 0 12px #000000;
-  border: #000000 solid 2px;
-  background-color: #1a1a1a;
-  color: white;
+  box-shadow: 0 0 12px #371b35;
+  border: #371b35 solid 2px;
 }
 
 .p-c {
@@ -194,63 +213,189 @@
   padding-inline-start: 310px;
 }
 
-.a {
-  font-weight: bolder;
-  color: #6a2fdf;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  border: 2px solid #6d6d6d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
 
-.sombra {
-  text-shadow: 0 2px 4px black;
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #9059ff;
+  outline: none;
 }
-/*teste =======================================*/
 
-.card {
-  background-color: #121212;
-  color: white;
-  width: 350px;
+.form {
+      background-color: #545454;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 40px;
+      color: white;
+      
+    }
+
+main {
+  margin-top: -65px; /* Ajuste este valor para a altura exata do seu cabeçalho (65px) */
+  position: relative; /* Também essencial para o z-index */
+  z-index: 1; /* Garante que o conteúdo principal fique abaixo do cabeçalho */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.botao {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  border-radius: 14px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  background-color: #6f5a9a;
+  border: 3px solid #bfa8ff80;
+  box-shadow: 0 4px 16px rgba(191, 168, 255, 0.25); 
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+.botao:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(191, 168, 255, 0.3);
+  text-shadow: -1px 2px 1px #f08dcf;
+}
+
+b {
+  color: #ec5e5e;
+}
+
+.voltar{
+  transition-duration: 0.20s;
+  text-decoration: none;
+}
+
+.voltar:hover{
+  transform: scale(1.20);
+}
+
+.required ,
+.span-required {
+  font-size: medium; 
+}
+
+.span-required {
+  color: #cc1919; 
+  display: none;
+}
+
+.event-card {
+  background: #202040;
+  color: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-}
-
-.card-header {
-  background-color: #ffffff;
-  padding: 1rem;
-  text-align: center;
-}
-
-.card-header h2 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: black;
-}
-
-.card-body {
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-.bold {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.card-body hr {
-  border: none;
-  border-top: 1px solid #aaa;
-  margin: 1rem 0;
-}
-
-.contact {
+  max-width: 320px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.event-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 16px;
+}
+
+.event-content h4 {
+  margin: 0 0 6px;
+  color: #ffd369;
+}
+
+.event-info {
+  display: block;
+  margin-bottom: 8px;
   font-size: 0.85rem;
+  color: #aaa;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  margin: 0.3rem 0;
+.event-content p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 12px;
 }
+
+.event-btn {
+  background: #8a6cff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+a[href*="cadastro_cliente"] .botao {
+  background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("../imagens/cadastro-pessoa.png");
+}
+
+a[href*="cadastro_empresa"] .botao {
+  background-image: linear-gradient(rgba(106, 47, 223, 0.6), rgba(106, 47, 223, 0.6)), url("../imagens/cadastro-empresa.png");
+}
+
+/* Pagina Login */
+
+.a-1 {
+		color: #ccc;
+		transition: color 0.3s ease;
+	  }
+
+	  .ativo {
+		color: #f75757 !important;
+		font-weight: 500;
+	  }
+	  .form {
+		background-color: #2a2a2a;
+		border: 1px solid #444;
+		border-radius: 6px;
+		color: #fff;
+		padding: 8px 12px;
+		width: 100%;
+	  }
+	  .form:focus {
+		border-color: #9059ff;
+		outline: none;
+		box-shadow: 0 0 0 2px #9059ff60;
+	  }
+	  .button-login {
+		background-color: #6a2fdf;
+		color: #fff;
+		border: none;
+		transition: background-color 0.3s ease;
+	  }
+	  .button-login:hover {
+		background-color: #9059ff;
+	  }
+	  .esquec-senha {
+		color: #ff66c4;
+		text-decoration: none;
+	  }
+	  .esquec-senha:hover {
+		text-decoration: underline;
+	  }

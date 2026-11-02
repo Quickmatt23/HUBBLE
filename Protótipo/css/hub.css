@@ -2,19 +2,19 @@
 /* Fonte 1: Poppins Bold */
 @font-face {
   font-family: font1;
-  src: url('fontes/Poppins-font/Poppins-Bold.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Bold.ttf');
 }
 
 /* Fonte 2: Molgan Regular */
 @font-face {
   font-family: font2;
-  src: url('fontes/molgan-font/MolganRegular-YqWj2.otf');
+  src: url('../fontes/molgan-font/MolganRegular-YqWj2.otf');
 }
 
 
 @font-face {
   font-family: font4;
-  src: url('fontes/Poppins-font/Poppins-Medium.ttf');
+  src: url('../fontes/Poppins-font/Poppins-Medium.ttf');
 }
 
 /* Classe para aplicar a fonte Poppins */
@@ -126,7 +126,7 @@ a {
 
 
 .fundo-princip {
-  background-image: url('imagens/fundo_principal.png');
+  background-image: url('../imagens/fundo_principal.png');
   background-size: cover;
   width: 100%;
   height: 700px;
@@ -259,7 +259,7 @@ a {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-image: url('imagens/loos.jpg'); /* se necessário */
+  background-image: url('../imagens/loos.jpg'); /* se necessário */
   background-size: cover;
   background-position: center;
   cursor: pointer;
