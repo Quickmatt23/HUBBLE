@@ -57,6 +57,7 @@ header {
 
 .btn-custom:hover {
   background-color: #9059ff;
+  color: #fff;
   transform: scale(1.03);
 }
 
@@ -73,6 +74,7 @@ header {
 
 .btn-danger-custom:hover {
   background-color: #ff6b6b;
+  color: #fff;
   transform: scale(1.03);
 }
 
@@ -185,4 +187,35 @@ th, td {
 .note {
   font-size: 0.9em;
   color: #666;
+}
+/* ======================== RESPONSIVO ======================== */
+@media (max-width: 767.98px) {
+  header {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .back-btn {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .container-section {
+    margin: 16px;
+  }
+
+  .panel {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }

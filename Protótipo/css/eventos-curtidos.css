@@ -125,3 +125,62 @@ header h1 {
   max-width: 320px;
 }
 
+
+.event-card--destaque {
+  max-width: 500px;
+}
+
+.outros-eventos {
+  border-top: solid 2px rgba(54, 54, 54, 0.5);
+}
+
+/* font-weight: 600 é sobrescrito por .fw-medium (500 !important), como já acontecia */
+.outros-eventos__titulo {
+  margin-left: 400px;
+  font-size: 26px;
+}
+
+/* ======================== RESPONSIVO ======================== */
+@media (max-width: 1199.98px) {
+  .mySwiper {
+    width: 100%;
+  }
+
+  .outros-eventos__titulo {
+    margin-left: 0;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .back-btn {
+    position: static;
+  }
+
+  .main-container {
+    padding: 0 16px;
+  }
+
+  .mySwiper {
+    padding: 20px 16px;
+  }
+
+  .swiper-slide {
+    max-width: none;
+  }
+
+  .mySwiper .swiper-wrapper {
+    margin-left: 0 !important;
+  }
+}
